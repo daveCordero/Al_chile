@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.librosparatodoscr.alChile"
+    version   = "3.3.0">
+	
+<name>Al Chile</name>
+<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" />
+
+<gap:splash src="phoneGap/LDPI_landscape.png"  gap:platform="android" gap:density="ldpi" />
+<gap:splash src="phoneGap/MDPI_landscape.png"  gap:platform="android" gap:density="mdpi" />
+<gap:splash src="phoneGap/HDPI_landscape.png"  gap:platform="android" gap:density="hdpi" />
+<gap:splash src="phoneGap/XHDPI_landscape.png" gap:platform="android" gap:density="xhdpi" />
+
+<gap:splash src="phoneGap/portrait-HDPI.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="phoneGap/portrait-LDPI.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="phoneGap/portrait-MDPI.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="phoneGap/portrait-XHDPI.png" gap:platform="android" gap:density="xhdpi" />
+
+<gap:platform name="android" />
+
+<description>
+Al Chile es un periódico digital de escuelas localizadas en Costa Rica, las cuales utilizan productos educativos de Libros para Todos como herramienta para su aprendizaje.
+</description>
+
+<preference name="fullscreen" value="true" />
+<preference name="orientation" value="default" />
+<preference name="target-device" value="universal" />
+<!--<preference name="webviewbounce" value="true" />
+<preference name="exit-on-suspend" value="true" />-->
+<preference name="show-splash-screen-spinner" value="false" />
+<preference name="auto-hide-splash-screen" value="true" />
+<preference name="SplashScreenDelay" value="5000" />
+<preference name="android-installLocation" value="auto" />
+
+<!-- to enable individual permissions use the following examples -->
+<feature name="http://api.phonegap.com/1.0/media"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
+
+<access origin="*"/>
+
+<author href="http://apoyo.librosparatodoscr.com" email="david.herrera@nacion.com">David Herrera Cordero | Libros para Todos | Grupo Nación</author>
+
+</widget>
