@@ -24,7 +24,7 @@ Al Chile es un periódico digital de escuelas localizadas en Costa Rica, las cua
 </description>
 
 <preference name="fullscreen" value="true" />
-<preference name="orientation" value="default" />
+<preference name="orientation" value="portrait" />
 <preference name="target-device" value="universal" />
 <!--<preference name="webviewbounce" value="true" />
 <preference name="exit-on-suspend" value="true" />-->
