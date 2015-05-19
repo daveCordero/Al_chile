@@ -1,0 +1,33 @@
+/* Swyper Dynamic */
+/*.swiper-dynamic-links {
+	text-align: center;
+}
+.swiper-dynamic-links a {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	margin: 5px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #333;
+	background: #eee;
+}*/
+.pagination-sd {
+	text-align: center;
+}
+.pagination-sd .swiper-pagination-switch {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	margin: 0 3px;
+	background: #aaa;
+}
+.pagination-sd .swiper-active-switch {
+	background: #333;
+}
