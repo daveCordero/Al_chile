@@ -30,6 +30,20 @@
 
 <script type="text/javascript">
 
+function OnLoad(){
+  document.addEventListener('deviceready', function(){
+    //enabling zoom control
+     cordova.plugins.ZoomControl.ZoomControl("true");
+     // enabling built in zoom control
+     cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
+     // enabling display zoom control
+     cordova.plugins.ZoomControl.setDisplayZoomControls("true");
+
+  }, function(){
+     alert('error deviceready');
+  });
+}
+
 // var ancho = $(window).width();
 var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
@@ -56,7 +70,7 @@ $(document).ready(function() {
 </script>
 
 </head>
-<body>
+<body onload="OnLoad();">
 
   <div class="swiper-container swiper-dynamic">
     <div class="swiper-wrapper">
