@@ -16,7 +16,7 @@
 <!-- <link rel="stylesheet" href="css/idangerous.swiper.css"> -->
 <!-- <link rel="stylesheet" href="css/style.css?v=1.8"> -->
 <!-- <link rel="stylesheet" href="css/swiper-demos.css?v=1.8"> -->
-<script src="js/libs/jquery-1.7.1.min.js"></script>
+<!-- <script src="js/libs/jquery-1.7.1.min.js"></script> -->
 
 <!-- Swiper -->
 <!-- <script src="js/idangerous.swiper-1.8.min.js"></script> -->
@@ -46,15 +46,15 @@ $(document).ready(function() {
   // necesario para que wActual y hActual obtengan un valor en relación a la ventana del navegador
   $('.swiper-container').css({ 'height':altoP+'px' });
   $('.swiper-slide').css({     'height':altoP+'px' });
-  $('.swiper-slide img').css({ 'height':altoP+'px' });
+  $('img').css({ 'height':altoP+'px' });
 
-  var imagen  = $('.swiper-slide img');
+  var imagen  = $('img');
   var wActual = imagen.width();
   var hActual = imagen.height();
 
   $('.swiper-container').css({ 'width':wActual+'px' });
   $('.swiper-slide').css({     'width':wActual+'px' });
-  $('.swiper-slide img').css({ 'width':wActual+'px' });
+  $('img').css({ 'width':wActual+'px' });
 
   // alert('Ancho actual: ' + imagen.width() );
 
@@ -64,14 +64,14 @@ $(document).ready(function() {
 
     $('.swiper-container').css({ 'width':ancho+'px' });
     $('.swiper-slide').css({     'width':ancho+'px' });
-    $('.swiper-slide img').css({ 'width':ancho+'px' });
+    $('img').css({ 'width':ancho+'px' });
 
     var hAjuste = hActual / 1.07;
 
     // nuevo ancho no ajusta alto definido anteriormente
     $('.swiper-container').css({ 'height':hAjuste+'px' });
     $('.swiper-slide').css({     'height':hAjuste+'px' });
-    $('.swiper-slide img').css({ 'height':hAjuste+'px' });
+    $('img').css({ 'height':hAjuste+'px' });
 
     var topMargin = ((alto - hAjuste) / 2) - 11;
     // alert('topMargin: ' + topMargin);
