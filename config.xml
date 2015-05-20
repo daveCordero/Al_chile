@@ -71,10 +71,17 @@
     <gap:splash src="phoneGap/MDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-mdpi" />
     <gap:splash src="phoneGap/HDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-hdpi" />
     <gap:splash src="phoneGap/XHDPI_portrait.png"    gap:platform="android"    gap:qualifier="port-xhdpi" /> -->
-    <gap:splash src="res/screen/android/LDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-ldpi" />
-    <gap:splash src="res/screen/android/MDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-mdpi" />
-    <gap:splash src="res/screen/android/HDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-hdpi" />
-    <gap:splash src="res/screen/android/XHDPI_portrait.png"    gap:platform="android"    gap:qualifier="port-xhdpi" />
+    <platform name="android">
+        <gap:splash src="res/screen/android/LDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-ldpi" />
+        <gap:splash src="res/screen/android/MDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-mdpi" />
+        <gap:splash src="res/screen/android/HDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-hdpi" />
+        <gap:splash src="res/screen/android/XHDPI_portrait.png"    gap:platform="android"    gap:qualifier="port-xhdpi" />
+    </platform>
+
+
+
+    <!-- Plugins -->
+    <gap:plugin name="com.kumbe.phonegap.zoom.zoomcontrol" version="0.1.7" />
 
 
 
