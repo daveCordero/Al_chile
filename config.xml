@@ -41,6 +41,8 @@
     <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard.
     <preference name="android-installLocation" value="preferExternal" /> -->
     <preference name="android-installLocation" value="auto" />
+    
+    <preference name="EnableViewportScale" value="true" />
 
     <!--
         If you do not want any permissions to be added to your app, add the
