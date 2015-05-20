@@ -55,8 +55,9 @@
 
 
 
-    <!-- Define app icon for each platform. -->
-    <icon src="phoneGap/Icon@2x.png" />
+    <!-- Define app icon for each platform.
+    <icon src="phoneGap/Icon@2x.png" /> -->
+    <icon src="res/screen/android/Icon@2x.png" />
     <!-- 
     <icon src="phoneGap/icon-36-ldpi.png"     gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="phoneGap/icon-48-mdpi.png"     gap:platform="android"    gap:qualifier="mdpi" />
