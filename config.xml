@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.librosparatodoscr.alChile"
-    version   = "3.3.0">
-	
-<name>Al Chile</name>
-<icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" />
+    version   = "3.7.0"> -->
 
+<widget id="com.librosparatodoscr.alChile" version="3.7.0">
+<name>Al Chile</name>
+<!-- <icon src="phoneGap/Icon@2x.png" gap:platform="android" gap:density="ldpi" /> -->
+<icon src="phoneGap/Icon@2x.png" platform="android" width="114" height="114" density="hdpi" />
+
+<!-- 
 <gap:splash src="phoneGap/LDPI_landscape.png"  gap:platform="android" gap:density="ldpi" />
 <gap:splash src="phoneGap/MDPI_landscape.png"  gap:platform="android" gap:density="mdpi" />
 <gap:splash src="phoneGap/HDPI_landscape.png"  gap:platform="android" gap:density="hdpi" />
@@ -15,9 +18,22 @@
 <gap:splash src="phoneGap/portrait-HDPI.png" gap:platform="android" gap:density="xhdpi" />
 <gap:splash src="phoneGap/portrait-LDPI.png" gap:platform="android" gap:density="xhdpi" />
 <gap:splash src="phoneGap/portrait-MDPI.png" gap:platform="android" gap:density="xhdpi" />
-<gap:splash src="phoneGap/portrait-XHDPI.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="phoneGap/portrait-XHDPI.png" gap:platform="android" gap:density="xhdpi" /> -->
 
-<gap:platform name="android" />
+<platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="phoneGap/HDPI_landscape.png"  density="land-hdpi"/>
+    <splash src="phoneGap/LDPI_landscape.png"  density="land-ldpi"/>
+    <splash src="phoneGap/MDPI_landscape.png"  density="land-mdpi"/>
+    <splash src="phoneGap/XHDPI_landscape.png" density="land-xhdpi"/>
+
+    <splash src="phoneGap/portrait-HDPI.png"   density="port-hdpi"/>
+    <splash src="phoneGap/portrait-LDPI.png"   density="port-ldpi"/>
+    <splash src="phoneGap/portrait-MDPI.png"   density="port-mdpi"/>
+    <splash src="phoneGap/portrait-XHDPI.png"  density="port-xhdpi"/>
+</platform>
+
+<!-- <gap:platform name="android" /> -->
 
 <description>
 Al Chile es un periódico digital de escuelas localizadas en Costa Rica, las cuales utilizan productos educativos de Libros para Todos como herramienta para su aprendizaje.
