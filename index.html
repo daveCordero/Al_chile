@@ -13,17 +13,17 @@
 <meta name="description" content="Al Chile es un periódico digital de escuelas localizadas en Costa Rica, las cuales utilizan productos educativos de Libros para Todos como herramienta para su aprendizaje.">
 <meta name="keywords" content="periódico digital, periódico digital estudiantil, Libros para Todos, Costa Rica, Grupo Nación">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="css/idangerous.swiper.css"> -->
-<!-- <link rel="stylesheet" href="css/style.css?v=1.8"> -->
-<!-- <link rel="stylesheet" href="css/swiper-demos.css?v=1.8"> -->
-<!-- <script src="js/libs/jquery-1.7.1.min.js"></script> -->
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/style.css?v=1.8">
+<link rel="stylesheet" href="css/swiper-demos.css?v=1.8">
+<script src="js/libs/jquery-1.7.1.min.js"></script>
 
 <!-- Swiper -->
-<!-- <script src="js/idangerous.swiper-1.8.min.js"></script> -->
+<script src="js/idangerous.swiper-1.8.min.js"></script>
 <!-- Swiper Scrollbar plugin -->
-<!-- <script src="js/idangerous.swiper.scrollbar-1.0.js"></script> -->
+<script src="js/idangerous.swiper.scrollbar-1.0.js"></script>
 <!-- Demos code -->
-<!-- <script src="js/swiper-demos.js?v=1.8"></script> -->
+<script src="js/swiper-demos.js?v=1.8"></script>
 
 <script type="text/javascript">
 
@@ -32,58 +32,58 @@
 // var alto  = window.innerHeight;
 
 // jquery: perfecto
-var ancho = $(window).width();
-var alto  = $(window).height();
+// var ancho = $(window).width();
+// var alto  = $(window).height();
 
-var altoP = alto-25;//-25 alto paginacion
+// var altoP = alto-25;//-25 alto paginacion
 
 // alert('Ancho: ' + ancho);// 787
 // alert('Alto: ' + altoP);
 
-$(document).ready(function() {
+// $(document).ready(function() {
 // $(window).load(function() {
 
   // necesario para que wActual y hActual obtengan un valor en relación a la ventana del navegador
-  $('.swiper-container').css({ 'height':altoP+'px' });
-  $('.swiper-slide').css({     'height':altoP+'px' });
-  $('img').css({ 'height':altoP+'px' });
+  // $('.swiper-container').css({ 'height':altoP+'px' });
+  // $('.swiper-slide').css({     'height':altoP+'px' });
+  // $('img').css({ 'height':altoP+'px' });
 
-  var imagen  = $('img');
-  var wActual = imagen.width();
-  var hActual = imagen.height();
+  // var imagen  = $('img');
+  // var wActual = imagen.width();
+  // var hActual = imagen.height();
 
-  $('.swiper-container').css({ 'width':wActual+'px' });
-  $('.swiper-slide').css({     'width':wActual+'px' });
-  $('img').css({ 'width':wActual+'px' });
+  // $('.swiper-container').css({ 'width':wActual+'px' });
+  // $('.swiper-slide').css({     'width':wActual+'px' });
+  // $('img').css({ 'width':wActual+'px' });
 
   // alert('Ancho actual: ' + imagen.width() );
 
-  if( ancho < wActual ){
+  // if( ancho < wActual ){
 
     // alert('ancho menor q wActual');
 
-    $('.swiper-container').css({ 'width':ancho+'px' });
-    $('.swiper-slide').css({     'width':ancho+'px' });
-    $('img').css({ 'width':ancho+'px' });
+    // $('.swiper-container').css({ 'width':ancho+'px' });
+    // $('.swiper-slide').css({     'width':ancho+'px' });
+    // $('img').css({ 'width':ancho+'px' });
 
-    var hAjuste = hActual / 1.07;
+    // var hAjuste = hActual / 1.07;
 
     // nuevo ancho no ajusta alto definido anteriormente
-    $('.swiper-container').css({ 'height':hAjuste+'px' });
-    $('.swiper-slide').css({     'height':hAjuste+'px' });
-    $('img').css({ 'height':hAjuste+'px' });
+    // $('.swiper-container').css({ 'height':hAjuste+'px' });
+    // $('.swiper-slide').css({     'height':hAjuste+'px' });
+    // $('img').css({ 'height':hAjuste+'px' });
 
-    var topMargin = ((alto - hAjuste) / 2) - 11;
+    // var topMargin = ((alto - hAjuste) / 2) - 11;
     // alert('topMargin: ' + topMargin);
-    $('.swiper-container').css({ 'margin-top':topMargin+'px' });
+    // $('.swiper-container').css({ 'margin-top':topMargin+'px' });
 
-  } else {
+  // } else {
 
     // alert('ancho Mayor q wActual');
 
-  }//fin if( ancho
+  // }//fin if( ancho
 
-});// fin $(documen).ready
+// });// fin $(documen).ready
 
 </script>
 
@@ -91,49 +91,83 @@ $(document).ready(function() {
 
 <body>
 
-  <!-- <img src="high_12.jpg" /> -->
-
   <div class="swiper-container swiper-dynamic">
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img src="high_12.jpg" />
+        <img src="res/img/high_1.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_2.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_3.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_4.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_5.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_6.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_7.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_8.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_9.jpg">
       </div>
 
       <div class="swiper-slide">
-        hola
+        <img src="res/img/high_11.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_12.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_13.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_14.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_17.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_18.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_19.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_20.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_21.jpg">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="res/img/high_22.jpg">
       </div>
 
     </div><!-- /.swiper-wrapper -->
