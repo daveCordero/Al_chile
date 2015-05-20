@@ -12,10 +12,12 @@
 <title>Al Chile - Libros para Todos | Grupo Nación</title>
 <meta name="description" content="Al Chile es un periódico digital de escuelas localizadas en Costa Rica, las cuales utilizan productos educativos de Libros para Todos como herramienta para su aprendizaje.">
 <meta name="keywords" content="periódico digital, periódico digital estudiantil, Libros para Todos, Costa Rica, Grupo Nación">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
 <link rel="stylesheet" href="css/idangerous.swiper.css">
 <link rel="stylesheet" href="css/style.css?v=1.8">
 <link rel="stylesheet" href="css/swiper-demos.css?v=1.8">
+
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
 <!-- Swiper -->
@@ -33,20 +35,20 @@
 
 // jquery: perfecto
 // var ancho = $(window).width();
-// var alto  = $(window).height();
+var alto  = $(window).height();
 
-// var altoP = alto-25;//-25 alto paginacion
+var altoP = alto-25;//-25 alto paginacion
 
 // alert('Ancho: ' + ancho);// 787
 // alert('Alto: ' + altoP);
 
-// $(document).ready(function() {
+$(document).ready(function() {
 // $(window).load(function() {
 
   // necesario para que wActual y hActual obtengan un valor en relación a la ventana del navegador
-  // $('.swiper-container').css({ 'height':altoP+'px' });
-  // $('.swiper-slide').css({     'height':altoP+'px' });
-  // $('img').css({ 'height':altoP+'px' });
+  $('.swiper-container').css({ 'height':altoP+'px' });
+  $('.swiper-slide').css({     'height':altoP+'px' });
+  $('.swiper-slide img').css({ 'height':altoP+'px' });
 
   // var imagen  = $('img');
   // var wActual = imagen.width();
@@ -83,7 +85,7 @@
 
   // }//fin if( ancho
 
-// });// fin $(documen).ready
+});// fin $(documen).ready
 
 </script>
 
