@@ -31,11 +31,7 @@
 
 // var ancho = $(window).width();
 var alto  = $(window).height();
-
 var altoP = alto - 25;//-25 alto paginacion
-
-// alert('Ancho: ' + ancho);// 787
-// alert('Alto: ' + altoP);
 
 $(document).ready(function() {
 // $(window).load(function() {
@@ -46,42 +42,10 @@ $(document).ready(function() {
   $('.swiper-slide img').css({ 'height':altoP+'px' });
 
   // var imagen  = $('#img');
-  var imagen  = $('.swiper-slide img');
-  var wActual = imagen.width();
-  // var hActual = imagen.height();
+  // var imagen  = $('.swiper-slide img');
+  // var wActual = imagen.width();// = 0 en android
 
-  alert('wActual: ' + wActual);// = 0 en android
-
-  // $('.swiper-container').css({ 'width':wActual+'px' });
-  // $('.swiper-slide').css({     'width':wActual+'px' });
-  $('.swiper-slide img').css({ 'width':wActual+'px' });
-
-  // alert('Ancho actual: ' + imagen.width() );
-
-  // if( ancho < wActual ){
-
-    // alert('ancho menor q wActual');
-
-    // $('.swiper-container').css({ 'width':ancho+'px' });
-    // $('.swiper-slide').css({     'width':ancho+'px' });
-    // $('img').css({ 'width':ancho+'px' });
-
-    // var hAjuste = hActual / 1.07;
-
-    // nuevo ancho no ajusta alto definido anteriormente
-    // $('.swiper-container').css({ 'height':hAjuste+'px' });
-    // $('.swiper-slide').css({     'height':hAjuste+'px' });
-    // $('img').css({ 'height':hAjuste+'px' });
-
-    // var topMargin = ((alto - hAjuste) / 2) - 11;
-    // alert('topMargin: ' + topMargin);
-    // $('.swiper-container').css({ 'margin-top':topMargin+'px' });
-
-  // } else {
-
-    // alert('ancho Mayor q wActual');
-
-  // }//fin if( ancho
+  $('.swiper-slide img').css({ 'width':altoP/2+'px' });
 
 });// fin $(documen).ready
 
