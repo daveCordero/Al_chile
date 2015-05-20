@@ -29,11 +29,6 @@
 
 <script type="text/javascript">
 
-// leve error con js
-// var ancho = window.innerWidth;
-// var alto  = window.innerHeight;
-
-// jquery: perfecto
 // var ancho = $(window).width();
 var alto  = $(window).height();
 
@@ -50,13 +45,13 @@ $(document).ready(function() {
   $('.swiper-slide').css({     'height':altoP+'px' });
   $('.swiper-slide img').css({ 'height':altoP+'px' });
 
-  // var imagen  = $('img');
-  // var wActual = imagen.width();
+  var imagen  = $('#img');
+  var wActual = imagen.width();
   // var hActual = imagen.height();
 
   // $('.swiper-container').css({ 'width':wActual+'px' });
   // $('.swiper-slide').css({     'width':wActual+'px' });
-  // $('img').css({ 'width':wActual+'px' });
+  $('.swiper-slide img').css({ 'width':wActual+'px' });
 
   // alert('Ancho actual: ' + imagen.width() );
 
@@ -97,7 +92,7 @@ $(document).ready(function() {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img src="res/img/high_1.jpg">
+        <img src="res/img/high_1.jpg" id="img">
       </div>
 
       <div class="swiper-slide">
