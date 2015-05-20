@@ -78,8 +78,8 @@
 	
 	con 100% se extiende x la ventana
 	sin 100% conserva proporcion cuando jquery le asigna altura*/
-	width: 100%;
-	/*height: 100%;*/
+	/*width: 100%;*/
+	height: 100%;
 	
 	margin: 0px auto;
 }
