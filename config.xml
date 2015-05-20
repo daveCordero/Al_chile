@@ -24,10 +24,12 @@
 
 
 
-    <!--
+    
     <preference name="show-splash-screen-spinner" value="false" />
+    
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="SplashScreenDelay" value="5000" /> -->
+    
+    <preference name="SplashScreenDelay" value="5000" />
 
     <!-- all: default means both landscape and portrait are enabled -->
     <preference name="orientation" value="portrait" />
@@ -41,7 +43,7 @@
     <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard.
     <preference name="android-installLocation" value="preferExternal" /> -->
     <preference name="android-installLocation" value="auto" />
-    
+
     <preference name="EnableViewportScale" value="true" />
 
     <!--
