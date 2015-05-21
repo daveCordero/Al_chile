@@ -46,6 +46,8 @@ var altoP = alto - 25;//-25 alto paginacion
 
 // var imagen = $('#imgSlide');
 
+var zoomOn = false;
+
 $(document).ready(function() {
 // $(window).load(function() {
 
@@ -77,10 +79,16 @@ $(document).ready(function() {
   
   // direct event
   $('.touch').on('doubletap', function(e) {
+
+    if( zoomOn == false ){
       // $(".swiper").addClass("zoomImg");
       $(".touch").addClass("zoomImg");
       // $('.swiper').css({ 'display':'none' });
       // $('.zoom').css({ 'display':'block' });
+    } else {
+      $(".touch").removeClass("zoomImg");
+    }
+
   });
 
   
