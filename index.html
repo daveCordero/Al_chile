@@ -96,6 +96,7 @@ $(document).ready(function() {
       // alert(this.img.src);
       // var div = document.createElement('div');
       $(".swiper").addClass("zoomImg");
+      $(".swiper").removeClass("swiper-container swiper-wrapper swiper-slide");
   });
 
   
@@ -108,7 +109,7 @@ $(document).ready(function() {
 <!-- <body onload="OnLoad();"> -->
 <body>
 
-  <div class="swiper-container swiper-dynamic swiper">
+  <div class="swiper-container swiper"> <!-- swiper-dynamic -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide touch">
