@@ -275,3 +275,16 @@ body {
 	/* relleno de fondo */
 	background-image: url("../res/img/bg.jpg");
 }
+
+.zoomImg {
+
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-khtml-transition: all 200ms ease-in-out;
+
+	-ms-transform: scale(2,3); /* IE 9 */
+    -webkit-transform: scale(2,3); /* Safari */
+    transform: scale(2,3);
+}
