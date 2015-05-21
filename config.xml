@@ -24,8 +24,10 @@
 
 
 
-    
-    <preference name="show-splash-screen-spinner" value="false" />
+    <!-- <preference name="ShowSplashScreenSpinner" value="false"/> -->
+
+    <!-- <preference name="show-splash-screen-spinner" value="false" /> -->
+    <preference name="show-splash-screen-spinner" value="true" />
     
     <preference name="auto-hide-splash-screen" value="true" />
     
@@ -59,8 +61,7 @@
 
 
 
-    <!-- Define app icon for each platform.
-    <icon src="phoneGap/Icon@2x.png" /> -->
+    <!-- Define app icon for each platform. -->
     <icon src="res/screen/android/Icon@2x.png" />
     <!-- 
     <icon src="phoneGap/icon-36-ldpi.png"     gap:platform="android"    gap:qualifier="ldpi" />
@@ -70,11 +71,7 @@
 
 
 
-    <!-- Define app splash screen for each platform.
-    <gap:splash src="phoneGap/LDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-ldpi" />
-    <gap:splash src="phoneGap/MDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-mdpi" />
-    <gap:splash src="phoneGap/HDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-hdpi" />
-    <gap:splash src="phoneGap/XHDPI_portrait.png"    gap:platform="android"    gap:qualifier="port-xhdpi" /> -->
+    <!-- Define app splash screen for each platform. -->
     <platform name="android">
         <gap:splash src="res/screen/android/LDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-ldpi" />
         <gap:splash src="res/screen/android/MDPI_portrait.png"     gap:platform="android"    gap:qualifier="port-mdpi" />

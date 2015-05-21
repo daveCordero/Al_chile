@@ -38,23 +38,25 @@
 
 <script type="text/javascript">
 
-function OnLoad(){
-  document.addEventListener('deviceready', function(){
-    //enabling zoom control
-     cordova.plugins.ZoomControl.ZoomControl("true");
-     // enabling built in zoom control
-     cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
-     // enabling display zoom control
-     cordova.plugins.ZoomControl.setDisplayZoomControls("true");
+// function OnLoad(){
+//   document.addEventListener('deviceready', function(){
+//     //enabling zoom control
+//      cordova.plugins.ZoomControl.ZoomControl("true");
+//      // enabling built in zoom control
+//      cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
+//      // enabling display zoom control
+//      cordova.plugins.ZoomControl.setDisplayZoomControls("true");
 
-  }, function(){
-     alert('error deviceready');
-  });
-}
+//   }, function(){
+//      alert('error deviceready');
+//   });
+// }
 
 // var ancho = $(window).width();
 var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
+
+var imagen = $('#imgSlide');
 
 $(document).ready(function() {
 // $(window).load(function() {
@@ -65,8 +67,9 @@ $(document).ready(function() {
   $('.swiper-slide img').css({ 'height':altoP+'px' });
 
   // var imagen  = $('#img');
-  // var imagen  = $('.swiper-slide img');
-  // var wActual = imagen.width();// = 0 en android
+  var imagen  = $('.swiper-slide img');
+  var wActual = imagen.width();// = 0 en android
+  alert('wActual: ' + wActual);
 
   // $('.swiper-slide img').css({ 'width':altoP/1.2+'px' });
   // $('.swiper-slide').css({ 'margin':'0px auto' });
@@ -78,13 +81,14 @@ $(document).ready(function() {
 </script>
 
 </head>
-<body onload="OnLoad();">
+<!-- <body onload="OnLoad();"> -->
+<body>
 
   <div class="swiper-container swiper-dynamic">
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img src="res/img/high_1.jpg">
+        <img src="res/img/high_1.jpg" id="imgSlide">
       </div>
 
       <div class="swiper-slide">
