@@ -29,6 +29,8 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
+<script src="http://rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
+
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
 <!-- Swiper Scrollbar plugin -->
@@ -81,9 +83,24 @@ $(document).ready(function() {
     // alert('touchstart');
   // }
 
-  $('.swiper-container').bind('doubletap', function(event){
-      alert('doubletap');
+  // $('.swiper-container').bind('doubletap', function(event){
+  //   alert('doubletap');
+  // });
+
+
+  
+  // direct event
+  $('.touch').on('doubletap', function(e) {
+      // console.log(this, e);
+      alert('.touch doubletap');
   });
+
+  // delegated event
+  $('.parent').on('doubletap', '.touch', function(e) {
+      console.log(this, e);
+  });
+
+  
 
 });// fin $(documen).ready
 
@@ -96,7 +113,7 @@ $(document).ready(function() {
   <div class="swiper-container swiper-dynamic">
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide">
+      <div class="swiper-slide touch">
         <img src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
       </div>
 
