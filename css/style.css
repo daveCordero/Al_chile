@@ -284,7 +284,9 @@ body {
 	-o-transition: all 200ms ease-in-out;
 	-khtml-transition: all 200ms ease-in-out;
 
-	-ms-transform: scale(2,3); /* IE 9 */
-    -webkit-transform: scale(2,3); /* Safari */
-    transform: scale(2,3);
+	-ms-transform: scale(1.9); /* IE 9 */
+    -webkit-transform: scale(1.9); /* Safari */
+    transform: scale(1.9);
+
+    overflow: scroll;
 }
