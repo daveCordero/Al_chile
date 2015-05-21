@@ -24,7 +24,6 @@
 
     <!-- <preference name="show-splash-screen-spinner" value="false" /> -->
     <!-- <preference name="show-splash-screen-spinner" value="true" /> -->
-
     <!-- <preference name="ShowSplashScreenSpinner" value="false"/> -->
     <preference name="ShowSplashScreenSpinner" value="true"/>
     
