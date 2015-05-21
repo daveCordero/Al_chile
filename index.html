@@ -76,10 +76,14 @@ $(document).ready(function() {
   // $('.swiper-container').css({ 'margin':'0px auto' });
   // $('.swiper-slide img').css({ 'margin':'0px auto' });
 
-  $('.swiper-slide img').on('touchstart', function(){
+  // $('.swiper-slide').on('touchstart', function(){
     // $(this).addClass('select');
-    alert('touchstart');
-  }
+    // alert('touchstart');
+  // }
+
+  $('.swiper-slide').bind('doubletap', function(event){
+      alert('doubletap');
+  });
 
 });// fin $(documen).ready
 
