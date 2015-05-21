@@ -92,12 +92,10 @@ $(document).ready(function() {
   // direct event
   $('.touch').on('doubletap', function(e) {
       // console.log(this, e);
-      alert('.touch doubletap');
-  });
-
-  // delegated event
-  $('.parent').on('doubletap', '.touch', function(e) {
-      console.log(this, e);
+      // var imgTouch = ;
+      // alert('.touch doubletap');
+      alert(this, img.src);
+      $('.swiper-container').css({ 'display':'none' });
   });
 
   
