@@ -40,20 +40,6 @@
 
 <script type="text/javascript">
 
-// function OnLoad(){
-//   document.addEventListener('deviceready', function(){
-//     //enabling zoom control
-//      cordova.plugins.ZoomControl.ZoomControl("true");
-//      // enabling built in zoom control
-//      cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
-//      // enabling display zoom control
-//      cordova.plugins.ZoomControl.setDisplayZoomControls("true");
-
-//   }, function(){
-//      alert('error deviceready');
-//   });
-// }
-
 // var ancho = $(window).width();
 var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
@@ -91,12 +77,10 @@ $(document).ready(function() {
   
   // direct event
   $('.touch').on('doubletap', function(e) {
-      // alert('.touch doubletap');
+      // $(".swiper").addClass("zoomImg");
+      $(".touch").addClass("zoomImg");
       // $('.swiper').css({ 'display':'none' });
-      // alert(this.img.src);
-      // var div = document.createElement('div');
-      $(".swiper").addClass("zoomImg");
-      $(".swiper").removeClass("swiper-container swiper-wrapper swiper-slide");
+      // $('.zoom').css({ 'display':'block' });
   });
 
   
@@ -106,10 +90,11 @@ $(document).ready(function() {
 </script>
 
 </head>
-<!-- <body onload="OnLoad();"> -->
 <body>
 
-  <div class="swiper-container swiper"> <!-- swiper-dynamic -->
+  <div class="zoom"></div><!-- /.zoom -->
+
+  <div class="swiper-container"> <!-- swiper-dynamic -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide touch">

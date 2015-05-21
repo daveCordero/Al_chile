@@ -276,6 +276,10 @@ body {
 	background-image: url("../res/img/bg.jpg");
 }
 
+.zoom {
+	display: none;
+}
+
 .zoomImg {
 
 	-webkit-transition: all 200ms ease-in-out;
@@ -288,5 +292,5 @@ body {
     -webkit-transform: scale(1.9); /* Safari */
     transform: scale(1.9);
 
-    overflow: scroll;
+    overflow: scroll !important;
 }
