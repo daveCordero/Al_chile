@@ -63,70 +63,28 @@ $(document).ready(function() {
   $('.swiper-slide').css({     'height':altoP+'px' });
   $('.swiper-slide img').css({ 'height':altoP+'px' });
 
-  // var imagen  = $('#img');
-  // var imagen  = $('.swiper-slide img');
-  // var wActual = imagen.width();// = 0 o null en android
-  // alert('wActual: ' + wActual);
-
-  // $('.swiper-slide img').css({ 'width':altoP/1.2+'px' });
-  // $('.swiper-slide').css({ 'margin':'0px auto' });
-  // $('.swiper-container').css({ 'margin':'0px auto' });
-  // $('.swiper-slide img').css({ 'margin':'0px auto' });
-
-  // $('.swiper-slide').on('touchstart', function(){
-    // $(this).addClass('select');
-    // alert('touchstart');
-  // }
-
-  // $('.swiper-container').bind('doubletap', function(event){
-  //   alert('doubletap');
-  // });
-  
-  // direct event
-  // $('.touch').on('doubletap', function(e) {
+  $('.mc-control img').bind('click',function(e){
 
     if( zoomOn == false ){
-
-      $('.mc-control img').bind('click',function(e){
-        // $('.mc-control').removeClass('zoomImgOff')
-        // $(".mc-control").addClass("zoomImgOn")
-        // $('body').css({ 'overflow':'scroll' })
-        // $('.swiper-container').css({ 'overflow':'scroll' })
-        // $('.swiper-wrapper').css({   'overflow':'scroll' })
-        // $('.swiper-slide').css({     'overflow':'scroll' })
-        // alert('imgTouch: ' +  imgTouch);
-        $('.swiper-container').css({ 'display':'none' });
-        $('.zoom').css({ 'display':'block' });
-        // $('.zoom').fadeIn(500);
-      })
-
-      // $(".touch").addClass("zoomImgOn");
-      // $('body').css({ 'overflow':'scroll' });
-      // // $('.touch').css({ 'overflow':'scroll' });
-      // $('.swiper-container').css({ 'overflow':'scroll' });
-      // $('.swiper-wrapper').css({   'overflow':'scroll' });
-      // $('.swiper-slide').css({     'overflow':'scroll' });
-
-      // var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
-      // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
-      // alert('img_type: ' + img_type);
-
-      // alert('zoomOn False');
+      // $('.mc-control').removeClass('zoomImgOff')
+      // $(".mc-control").addClass("zoomImgOn")
+      // alert('imgTouch: ' +  imgTouch);
+      $('.swiper').css({ 'display':'none' });
+      $('.zoom').css({ 'display':'block' });
+      // $('.zoom').fadeIn(500);
       zoomOn = true;
 
     } else {
 
-      $('.mc-control img').bind('click',function(e){
-        // alert('zoom On True');
-        // $('.zoom').fadeOut(500);
-        $('.zoom').css({ 'display':'none' });
-        $('.swiper-container').css({ 'display':'block' });
-        zoomOn = false;
-      })
+      // alert('zoom On True');
+      // $('.zoom').fadeOut(500);
+      $('.zoom').css({ 'display':'none' });
+      $('.swiper').css({ 'display':'block' });
+      zoomOn = false;
 
     }// fin if( zoomOn
 
-  // });// fin $('.touch'
+  })//fin $('.mc-control img
 
 });// fin $(documen).ready
 
@@ -137,7 +95,7 @@ $(document).ready(function() {
 
   <div class="zoom"></div> <!--/.zoom -->
 
-  <div class="swiper-container swiper-dynamic"> <!-- touch -->
+  <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
