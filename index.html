@@ -89,8 +89,8 @@ $(document).ready(function() {
     if( zoomOn == false ){
 
       $('.mc-control img').bind('click',function(e){
-        e.preventDefault()
-        if (!allowMovieClick) return;
+        // e.preventDefault()
+        // if (!allowMovieClick) return;
         $('.zoomImgOff').removeClass('zoomImgOff')
         $(".mc-control").addClass("zoomImgOn")
         $('body').css({ 'overflow':'scroll' })
@@ -112,15 +112,15 @@ $(document).ready(function() {
       // alert('img_type: ' + img_type);
 
       // alert('zoomOn false');
-  //     zoomOn = true;
+      zoomOn = true;
 
     } else {
 
   //     $(".touch").removeClass("zoomImgOn");
   //     $(".touch").addClass("zoomImgOff");
   //     $('body').css({ 'overflow':'hidden' });
-  //     alert('zoomOn true');
-  //     zoomOn = false;
+      alert('zoomOn true');
+      zoomOn = false;
 
     }// fin if( zoomOn
 
@@ -135,7 +135,7 @@ $(document).ready(function() {
 
   <!--<div class="zoom"></div> /.zoom -->
 
-  <div class="swiper-container mc-control zoomImgOff"> <!-- touch swiper-dynamic -->
+  <div class="swiper-container swiper-dynamic mc-control zoomImgOff"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">

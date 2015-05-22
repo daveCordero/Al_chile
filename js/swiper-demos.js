@@ -4,7 +4,7 @@ Author: Vladimir Kharlampidi, The iDangero.us
 $(function(){
 
 	//Movies App
-	var allowMovieClick = true
+	// var allowMovieClick = true
 	// var swiperMControl = $('.mc-control').swiper({
 	// 	mode : "horizontal", 
 	// 	scrollContainer:true,
