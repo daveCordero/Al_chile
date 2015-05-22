@@ -280,17 +280,23 @@ body {
 	display: none;
 }
 
-.zoomImg {
-
+.touch {
 	-webkit-transition: all 500ms ease-in-out;
 	-moz-transition:    all 500ms ease-in-out;
 	-ms-transition:     all 500ms ease-in-out;
 	-o-transition:      all 500ms ease-in-out;
 	-khtml-transition:  all 500ms ease-in-out;
+}
 
+.zoomImgOn {
 	-ms-transform:     scale(1.9); /* IE 9 */
     -webkit-transform: scale(1.9); /* Safari */
     transform:         scale(1.9);
+    /*overflow: scroll !important;*/
+}
 
-    overflow: scroll !important;
+.zoomImgOff {
+	-ms-transform:     scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari */
+    transform:         scale(1.0);
 }
