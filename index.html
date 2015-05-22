@@ -51,6 +51,14 @@ var imgTouch = '';
 function zoomeR() {
 
   alert('imgTouch: ' +  imgTouch);
+  $('.pagination-sd').css({ 'display':'none' });
+  $('.swiper').css({        'display':'none' });
+  // $('body').css({           'background-image':'url("imgTouch")' });
+  // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
+  // $('#zoomCont').fadeIn(500);
+  $('#zoomCont').css({ 'visibility':'visible' });
+  $('#zoomCont').html( '<img src="res/img/high_1.jpg">');
+
   // if( zoomOn == false ){
       // $('.mc-control').removeClass('zoomImgOff')
       // $(".mc-control").addClass("zoomImgOn")
@@ -95,7 +103,7 @@ $(document).ready(function() {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = this.src; zoomeR();" src="res/img/high_1.jpg">
+        <img onclick="javascript: imgTouch = this.attrsrc; zoomeR();" src="res/img/high_1.jpg">
       </div>
 
       <div class="swiper-slide">
