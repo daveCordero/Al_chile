@@ -59,10 +59,11 @@ function zoomerIn() {
     // $('#zoomCont').append('<img onclick="javascript: zoomerOut();" src="imgTouch">');
     // $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
   // });
+
+  $('#zoomCont').css({      'visibility':'visible' });
   $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
   $('.pagination-sd').css({ 'visibility':'hidden' });
   $('.swiper').css({        'visibility':'hidden' });
-  $('#zoomCont').css({      'visibility':'visible' });
 
 }//fin zoomeR()
 
