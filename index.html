@@ -81,15 +81,23 @@ $(document).ready(function() {
   $('.touch').on('doubletap', function(e) {
 
     if( zoomOn == false ){
+      
       // $(".swiper").addClass("zoomImg");
-      $(".touch").addClass("zoomImg");
+      // $(".touch img").addClass("zoomImg");
       // $('.swiper').css({ 'display':'none' });
       // $('.zoom').css({ 'display':'block' });
-    } else {
-      $(".touch").removeClass("zoomImg");
-    }
 
-  });
+      var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
+      var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
+      alert('img_type: ' + img_type);
+
+    } else {
+
+      // $(".touch").removeClass("zoomImg");
+
+    }// fin if( zoomOn    }
+
+  });// fin $('.touch'
 
   
 
@@ -105,7 +113,7 @@ $(document).ready(function() {
   <div class="swiper-container"> <!-- swiper-dynamic -->
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide touch">
+      <div class="swiper-slide"> <!-- touch -->
         <img src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
       </div>
 

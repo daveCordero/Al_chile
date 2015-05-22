@@ -282,15 +282,15 @@ body {
 
 .zoomImg {
 
-	-webkit-transition: all 200ms ease-in-out;
-	-moz-transition: all 200ms ease-in-out;
-	-ms-transition: all 200ms ease-in-out;
-	-o-transition: all 200ms ease-in-out;
-	-khtml-transition: all 200ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition:    all 500ms ease-in-out;
+	-ms-transition:     all 500ms ease-in-out;
+	-o-transition:      all 500ms ease-in-out;
+	-khtml-transition:  all 500ms ease-in-out;
 
-	-ms-transform: scale(1.9); /* IE 9 */
+	-ms-transform:     scale(1.9); /* IE 9 */
     -webkit-transform: scale(1.9); /* Safari */
-    transform: scale(1.9);
+    transform:         scale(1.9);
 
     overflow: scroll !important;
 }
