@@ -18,17 +18,17 @@ $(function(){
 	// $('.mc-control img').bind('mousedown',function(e){
 	// 	e.preventDefault()
 	// })
-	$('.mc-control img').bind('click',function(e){
-		e.preventDefault()
-		if (!allowMovieClick) return;
-		$('.zoomImgOff').removeClass('zoomImgOff')
-		$(".mc-control").addClass("zoomImgOn")
-		$('body').css({ 'overflow':'scroll' })
-		$('.swiper-container').css({ 'overflow':'scroll' })
-	    $('.swiper-wrapper').css({   'overflow':'scroll' })
-	    $('.swiper-slide').css({     'overflow':'scroll' })
-		alert('click')
-	})
+	// $('.mc-control img').bind('click',function(e){
+	// 	e.preventDefault()
+	// 	if (!allowMovieClick) return;
+	// 	$('.zoomImgOff').removeClass('zoomImgOff')
+	// 	$(".mc-control").addClass("zoomImgOn")
+	// 	$('body').css({ 'overflow':'scroll' })
+	// 	$('.swiper-container').css({ 'overflow':'scroll' })
+	//     $('.swiper-wrapper').css({   'overflow':'scroll' })
+	//     $('.swiper-slide').css({     'overflow':'scroll' })
+	// 	alert('click')
+	// })
 	
 	/* Dynamic Swiper */
 	function randomColor () {

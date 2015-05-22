@@ -86,7 +86,19 @@ $(document).ready(function() {
   // direct event
   // $('.touch').on('doubletap', function(e) {
 
-  //   if( zoomOn == false ){
+    if( zoomOn == false ){
+
+      $('.mc-control img').bind('click',function(e){
+        e.preventDefault()
+        if (!allowMovieClick) return;
+        $('.zoomImgOff').removeClass('zoomImgOff')
+        $(".mc-control").addClass("zoomImgOn")
+        $('body').css({ 'overflow':'scroll' })
+        $('.swiper-container').css({ 'overflow':'scroll' })
+        $('.swiper-wrapper').css({   'overflow':'scroll' })
+        $('.swiper-slide').css({     'overflow':'scroll' })
+        alert('click false')
+      })
 
       // $(".touch").addClass("zoomImgOn");
       // $('body').css({ 'overflow':'scroll' });
@@ -99,10 +111,10 @@ $(document).ready(function() {
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-  //     alert('zoomOn false');
+      // alert('zoomOn false');
   //     zoomOn = true;
 
-  //   } else {
+    } else {
 
   //     $(".touch").removeClass("zoomImgOn");
   //     $(".touch").addClass("zoomImgOff");
@@ -110,7 +122,7 @@ $(document).ready(function() {
   //     alert('zoomOn true');
   //     zoomOn = false;
 
-  //   }// fin if( zoomOn
+    }// fin if( zoomOn
 
   // });// fin $('.touch'
 
