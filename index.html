@@ -88,28 +88,22 @@ $(document).ready(function() {
 
     if( zoomOn == false ){
 
-      // $(".swiper").addClass("zoomImg");
       $(".touch").addClass("zoomImg");
-      // $('.swiper').css({ 'display':'none' });
-      // $('.zoom').css({ 'display':'block' });
+      $('body').css({ 'overflow':'scroll' });
 
       // var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      // function getImgSrc(img){
-      //   var imgName = img.src;
-      //   alert(imgName);
-      // }​
-      // alert('imgName: 'imgName);
       alert('zoomOn false');
-      zoomOn == true;
+      zoomOn = true;
 
     } else {
 
       $(".touch").removeClass("zoomImg");
+      $('body').css({ 'overflow':'hidden' });
       alert('zoomOn true');
-      zoomOn == false;
+      zoomOn = false;
 
     }// fin if( zoomOn
 
