@@ -4,14 +4,14 @@ Author: Vladimir Kharlampidi, The iDangero.us
 $(function(){
 
 	//Movies App
-	var swiperMovies = $('.mc-posters').swiper({
-		mode : "horizontal", 
-		onlyExternal : true,
-		speed:1000
-	});
+	// var swiperMovies = $('.mc-posters').swiper({
+	// 	mode : "horizontal", 
+	// 	onlyExternal : true,
+	// 	speed:1000
+	// });
 	var allowMovieClick = true
 	var swiperMControl = $('.mc-control').swiper({
-		mode : "horizontal", 
+		// mode : "horizontal", 
 		scrollContainer:true,
 		onTouchMove : function(){
 			allowMovieClick = false	
@@ -22,6 +22,8 @@ $(function(){
 	});
 	$('.mc-control img').bind('mousedown',function(e){
 		e.preventDefault()
+		$(this).addClass('zoomImgOn')
+		alert('zoomImgOn');
 	})
 	$('.mc-control img').bind('click',function(e){
 		e.preventDefault()
@@ -29,8 +31,7 @@ $(function(){
 		// var index = $(this).index()
 		// swiperMovies.swipeTo ( index )
 		// $('.mc-control .active').removeClass('active')
-		$(this).addClass('zoomImgOn')
-		alert('zoomImgOn');
+		// $(this).addClass('active')
 	})
 	
 	/* Dynamic Swiper */
