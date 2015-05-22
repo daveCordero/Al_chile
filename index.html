@@ -97,18 +97,17 @@ $(document).ready(function() {
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      // function getImgSrc(img){
-        // var name = img.src;
-        // alert(name);
-      // }​
-
-      alert('imgName: 'imgName);
-
+      function getImgSrc(img){
+        var imgName = img.src;
+        alert(imgName);
+      }​
+      // alert('imgName: 'imgName);
       zoomOn == true;
 
     } else {
 
       // $(".touch").removeClass("zoomImg");
+      zoomOn == false;
 
     }// fin if( zoomOn
 
@@ -127,8 +126,8 @@ $(document).ready(function() {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide"> <!-- touch -->
-        <!-- <img ondblclick="getImgSrc(this)" src="res/img/high_1.jpg"> -->
-        <img ondblclick="var imgName = this.src;" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
+        <img ondblclick="getImgSrc(this)" src="res/img/high_1.jpg">
+        <!-- <img ondblclick="javascript: var imgName = this.src;" src="res/img/high_1.jpg"> -->
       </div>
 
       <div class="swiper-slide">
