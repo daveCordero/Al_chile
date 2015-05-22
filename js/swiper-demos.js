@@ -26,10 +26,11 @@ $(function(){
 	$('.mc-control img').bind('click',function(e){
 		e.preventDefault()
 		if (!allowMovieClick) return;
-		var index = $(this).index()
-		swiperMovies.swipeTo ( index )
-		$('.mc-control .active').removeClass('active')
-		$(this).addClass('active')
+		// var index = $(this).index()
+		// swiperMovies.swipeTo ( index )
+		// $('.mc-control .active').removeClass('active')
+		$(this).addClass('zoomImgOn')
+		alert('zoomImgOn');
 	})
 	
 	/* Dynamic Swiper */
