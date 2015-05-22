@@ -90,7 +90,10 @@ $(document).ready(function() {
 
       $(".touch").addClass("zoomImgOn");
       $('body').css({ 'overflow':'scroll' });
-      $('.touch').css({ 'overflow':'scroll' });
+      // $('.touch').css({ 'overflow':'scroll' });
+      $('.swiper-container').css({ 'overflow':'scroll' });
+      $('.swiper-wrapper').css({   'overflow':'scroll' });
+      $('.swiper-slide').css({     'overflow':'scroll' });
 
       // var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
