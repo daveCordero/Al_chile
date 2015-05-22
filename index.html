@@ -29,8 +29,8 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<!-- double doubletap -->
-<script src="js/libs/jquery.finger.js"></script>
+<!-- double doubletap
+<script src="js/libs/jquery.finger.js"></script> -->
 
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
@@ -84,35 +84,35 @@ $(document).ready(function() {
 
   
   // direct event
-  $('.touch').on('doubletap', function(e) {
+  // $('.touch').on('doubletap', function(e) {
 
-    if( zoomOn == false ){
+  //   if( zoomOn == false ){
 
-      $(".touch").addClass("zoomImgOn");
-      $('body').css({ 'overflow':'scroll' });
-      // $('.touch').css({ 'overflow':'scroll' });
-      $('.swiper-container').css({ 'overflow':'scroll' });
-      $('.swiper-wrapper').css({   'overflow':'scroll' });
-      $('.swiper-slide').css({     'overflow':'scroll' });
+      // $(".touch").addClass("zoomImgOn");
+      // $('body').css({ 'overflow':'scroll' });
+      // // $('.touch').css({ 'overflow':'scroll' });
+      // $('.swiper-container').css({ 'overflow':'scroll' });
+      // $('.swiper-wrapper').css({   'overflow':'scroll' });
+      // $('.swiper-slide').css({     'overflow':'scroll' });
 
       // var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      alert('zoomOn false');
-      zoomOn = true;
+  //     alert('zoomOn false');
+  //     zoomOn = true;
 
-    } else {
+  //   } else {
 
-      $(".touch").removeClass("zoomImgOn");
-      $(".touch").addClass("zoomImgOff");
-      $('body').css({ 'overflow':'hidden' });
-      alert('zoomOn true');
-      zoomOn = false;
+  //     $(".touch").removeClass("zoomImgOn");
+  //     $(".touch").addClass("zoomImgOff");
+  //     $('body').css({ 'overflow':'hidden' });
+  //     alert('zoomOn true');
+  //     zoomOn = false;
 
-    }// fin if( zoomOn
+  //   }// fin if( zoomOn
 
-  });// fin $('.touch'
+  // });// fin $('.touch'
 
 });// fin $(documen).ready
 
@@ -123,12 +123,10 @@ $(document).ready(function() {
 
   <!--<div class="zoom"></div> /.zoom -->
 
-  <div class="swiper-container swiper-dynamic touch"> <!-- -->
+  <div class="swiper-container swiper-dynamic mc-control"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <!-- <img ondblclick="getImgSrc(this)" src="res/img/high_1.jpg"> -->
-        <!-- <img ondblclick="javascript: var imgName = this.src;" src="res/img/high_1.jpg"> -->
         <img src="res/img/high_1.jpg">
       </div>
 
