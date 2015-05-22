@@ -29,7 +29,7 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<!-- double touch -->
+<!-- double doubletap -->
 <script src="js/libs/jquery.finger.js"></script>
 
 <!-- Swiper -->
@@ -102,11 +102,13 @@ $(document).ready(function() {
       //   alert(imgName);
       // }​
       // alert('imgName: 'imgName);
+      alert('zoomOn false');
       zoomOn == true;
 
     } else {
 
       $(".touch").removeClass("zoomImg");
+      alert('zoomOn true');
       zoomOn == false;
 
     }// fin if( zoomOn
@@ -122,10 +124,10 @@ $(document).ready(function() {
 
   <!--<div class="zoom"></div> /.zoom -->
 
-  <div class="swiper-container swiper-dynamic"> <!-- -->
-    <div class="swiper-wrapper touch">
+  <div class="swiper-container swiper-dynamic touch"> <!-- -->
+    <div class="swiper-wrapper">
 
-      <div class="swiper-slide"> <!-- touch -->
+      <div class="swiper-slide">
         <!-- <img ondblclick="getImgSrc(this)" src="res/img/high_1.jpg"> -->
         <!-- <img ondblclick="javascript: var imgName = this.src;" src="res/img/high_1.jpg"> -->
         <img src="res/img/high_1.jpg">
