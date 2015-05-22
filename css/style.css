@@ -281,7 +281,6 @@ body {
 	overflow: scroll;
 
 	display: block;
-	visibility: hidden;
 
 	float: none;
 	clear: both;
@@ -290,6 +289,7 @@ body {
 	height: 100%;
 
 	color: #FFF;
+	visibility: hidden;
 }
 
 /*

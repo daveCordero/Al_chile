@@ -50,37 +50,47 @@ var imgTouch = '';
 
 function zoomerIn() {
 
-  // alert(imgTouch);
-  // $('.pagination-sd').css({ 'display':'none' });
-  // $('.swiper').css({        'display':'none' });
-  // $('#zoomCont').css({      'display':'block' });
+  alert('imgTouch: ' +  imgTouch);
+  $('.pagination-sd').css({ 'display':'none' });
+  $('.swiper').css({        'display':'none' });
+  // $('body').css({           'background-image':'url("imgTouch")' });
+  // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
+  // $('#zoomCont').fadeIn(500);
+  $('#zoomCont').css({ 'visibility':'visible' });
+  // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
+  $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="imgTouch">');
 
-  // $('#zoomCont').fadeIn( 100, function(){ 
-    // $('#zoomCont').append('<img onclick="javascript: zoomerOut();" src="imgTouch">');
-    // $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
-  // });
+  // if( zoomOn == false ){
+      // $('.mc-control').removeClass('zoomImgOff')
+      // $(".mc-control").addClass("zoomImgOn")
+      // alert('imgTouch: ' +  imgTouch);
+    //   $('.pagination-sd').css({ 'display':'none' });
+    //   $('.swiper').css({        'display':'none' });
+    //   // $('body').css({           'background-image':'url("imgTouch")' });
+    //   // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
+    //   $('#zoomCont').html('<img src="res/img/high_1.jpg">');
+    //   $('#zoomCont').fadeIn(500);
+    //   zoomOn = true;
 
-  $('#zoomCont').css({      'visibility':'visible' });
-  $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
-  $('.pagination-sd').css({ 'visibility':'hidden' });
-  $('.swiper').css({        'visibility':'hidden' });
+    // } else {
+
+    //   // alert('zoom On True');
+    //   $('#zoomCont').fadeOut(500);
+    //   $('.swiper').css({        'display':'block' });
+    //   $('.pagination-sd').css({ 'display':'block' });
+    //   // $('body').css({           'background-image':'url("res/img/bg.jpg")' });
+    //   zoomOn = false;
+
+    // }// fin if( zoomOn
 
 }//fin zoomeR()
 
 function zoomerOut() {
-  // $('#zoomCont').css({ 'visibility':'hidden' });
-  $("#zoomCont img:last-child").remove();
-  // $('#zoomCont').prepend('img');
-  // $('#zoomCont').css({      'display':'none' });
-  // $('#zoomCont').fadeOut( 100, function(){ 
-    // $( ".swiper" ).fadeIn( 100 );
-    // $( ".pagination-sd" ).fadeIn( 100 );
-    // $('.swiper').css({        'display':'block' });
-    // $('.pagination-sd').css({ 'display':'block' });
-  // });
+  // $('.pagination-sd').css({ 'display':'none' });
+  // $('.swiper').css({        'display':'none' });
   $('#zoomCont').css({ 'visibility':'hidden' });
-  $('.pagination-sd').css({ 'visibility':'visible' });
-  $('.swiper').css({        'visibility':'visible' });
+  $('.swiper').fadeIn(500);
+  $('.pagination-sd').fadeIn(500);
 }
 
 $(document).ready(function() {
@@ -98,10 +108,13 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <div class="swiper-container swiper-dynamic swiper">
+  <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
+        <!-- <img onclick="javascript: imgTouch = this.attr.src; zoomerIn();" src="res/img/high_1.jpg"> -->
+        <!-- <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_1.jpg"> -->
+        <!-- <img onclick="javascript: imgTouch = this.src; zoomerIn();" src="res/img/high_1.jpg"> -->
         <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_1.jpg">
       </div>
 
