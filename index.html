@@ -46,6 +46,10 @@ var altoP = alto - 25;//-25 alto paginacion
 
 // var imagen = $('#imgSlide');
 
+function changeIt(_src){
+    alert(_src);
+}​
+
 var zoomOn = false;
 
 $(document).ready(function() {
@@ -81,15 +85,17 @@ $(document).ready(function() {
   $('.touch').on('doubletap', function(e) {
 
     if( zoomOn == false ){
-      
+
       // $(".swiper").addClass("zoomImg");
       // $(".touch img").addClass("zoomImg");
       // $('.swiper').css({ 'display':'none' });
       // $('.zoom').css({ 'display':'block' });
 
-      var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
-      var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
-      alert('img_type: ' + img_type);
+      // var img = $(this).find(".touch img"); // use a variable to store your image element in case you have to change the container class
+      // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
+      // alert('img_type: ' + img_type);
+
+      zoomOn == true;
 
     } else {
 
@@ -114,7 +120,7 @@ $(document).ready(function() {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide touch"> <!-- -->
-        <img src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
+        <img onclick="changeIt(this.src)" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
       </div>
 
       <div class="swiper-slide">
