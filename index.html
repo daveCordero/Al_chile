@@ -50,20 +50,19 @@ var imgTouch = '';
 
 function zoomerIn() {
 
-  alert(imgTouch);
-  $('.pagination-sd').css({ 'display':'none' });
-  $('.swiper').css({        'display':'none' });
+  // alert(imgTouch);
+  // $('.pagination-sd').css({ 'display':'none' });
+  // $('.swiper').css({        'display':'none' });
   // $('#zoomCont').css({      'display':'block' });
 
-  $('#zoomCont').fadeIn( 100, function(){ 
+  // $('#zoomCont').fadeIn( 100, function(){ 
     // $('#zoomCont').append('<img onclick="javascript: zoomerOut();" src="imgTouch">');
-    $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
-  });
-  // $('#zoomCont').css({ 'visibility':'visible' });
-  // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
-  // $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
-  // $('#zoomCont').append(imgTouch);
-  // $('#zoomCont').css({ 'display':'block' });
+    // $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
+  // });
+  $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
+  $('.pagination-sd').css({ 'visibility':'hidden' });
+  $('.swiper').css({        'visibility':'hidden' });
+  $('#zoomCont').css({      'visibility':'visible' });
 
 }//fin zoomeR()
 
@@ -72,12 +71,15 @@ function zoomerOut() {
   $("#zoomCont img:last-child").remove();
   // $('#zoomCont').prepend('img');
   // $('#zoomCont').css({      'display':'none' });
-  $('#zoomCont').fadeOut( 100, function(){ 
-    $( ".swiper" ).fadeIn( 100 );
-    $( ".pagination-sd" ).fadeIn( 100 );
+  // $('#zoomCont').fadeOut( 100, function(){ 
+    // $( ".swiper" ).fadeIn( 100 );
+    // $( ".pagination-sd" ).fadeIn( 100 );
     // $('.swiper').css({        'display':'block' });
     // $('.pagination-sd').css({ 'display':'block' });
-  });
+  // });
+  $('#zoomCont').css({ 'visibility':'hidden' });
+  $('.pagination-sd').css({ 'visibility':'visible' });
+  $('.swiper').css({        'visibility':'visible' });
 }
 
 $(document).ready(function() {
