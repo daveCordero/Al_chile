@@ -277,9 +277,9 @@ body {
 }
 
 #zoomCont { 
-	background-color: #CCC;
-	overflow: scroll;
-	/*display: block;*/
+	background-color: #444;
+	/*overflow: scroll;
+	display: block;*/
 	float: none;
 	clear: both;
 

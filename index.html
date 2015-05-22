@@ -57,44 +57,20 @@ function zoomerIn() {
   // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
   // $('#zoomCont').fadeIn(500);
   // $('#zoomCont').css({ 'visibility':'visible' });
-  $('#zoomCont').css({ 'display':'block' });
+  // $('#zoomCont').css({ 'display':'block' });
   // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
   $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="imgTouch">');
-
-  // if( zoomOn == false ){
-      // $('.mc-control').removeClass('zoomImgOff')
-      // $(".mc-control").addClass("zoomImgOn")
-      // alert('imgTouch: ' +  imgTouch);
-    //   $('.pagination-sd').css({ 'display':'none' });
-    //   $('.swiper').css({        'display':'none' });
-    //   // $('body').css({           'background-image':'url("imgTouch")' });
-    //   // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
-    //   $('#zoomCont').html('<img src="res/img/high_1.jpg">');
-    //   $('#zoomCont').fadeIn(500);
-    //   zoomOn = true;
-
-    // } else {
-
-    //   // alert('zoom On True');
-    //   $('#zoomCont').fadeOut(500);
-    //   $('.swiper').css({        'display':'block' });
-    //   $('.pagination-sd').css({ 'display':'block' });
-    //   // $('body').css({           'background-image':'url("res/img/bg.jpg")' });
-    //   zoomOn = false;
-
-    // }// fin if( zoomOn
+  $('#zoomCont').css({ 'display':'block' });
 
 }//fin zoomeR()
 
 function zoomerOut() {
-  // $('.pagination-sd').css({ 'display':'none' });
-  // $('.swiper').css({        'display':'none' });
   // $('#zoomCont').css({ 'visibility':'hidden' });
-  $("#zoomCont img").remove();
-  $('#zoomCont').css({ 'display':'none' });
+  // $("#zoomCont img:last-child").remove();
+  $('#zoomCont').css({      'display':'none' });
   // $('.swiper').fadeIn(500);
   // $('.pagination-sd').fadeIn(500);
-  $('.swiper').css({ 'display':'block' });
+  $('.swiper').css({        'display':'block' });
   $('.pagination-sd').css({ 'display':'block' });
 }
 
@@ -113,13 +89,10 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
+  <div class="swiper-container swiper-dynamic swiper">
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <!-- <img onclick="javascript: imgTouch = this.attr.src; zoomerIn();" src="res/img/high_1.jpg"> -->
-        <!-- <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_1.jpg"> -->
-        <!-- <img onclick="javascript: imgTouch = this.src; zoomerIn();" src="res/img/high_1.jpg"> -->
         <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_1.jpg">
       </div>
 
