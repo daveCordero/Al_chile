@@ -11,7 +11,7 @@ $(function(){
 	// });
 	var allowMovieClick = true
 	var swiperMControl = $('.mc-control').swiper({
-		// mode : "horizontal", 
+		mode : "horizontal", 
 		scrollContainer:true,
 		onTouchMove : function(){
 			allowMovieClick = false	
@@ -22,8 +22,8 @@ $(function(){
 	});
 	$('.mc-control img').bind('mousedown',function(e){
 		e.preventDefault()
-		$(this).addClass('zoomImgOn')
-		alert('zoomImgOn');
+		// $(this).addClass('zoomImgOn')
+		alert('mousedown');
 	})
 	$('.mc-control img').bind('click',function(e){
 		e.preventDefault()
@@ -32,6 +32,7 @@ $(function(){
 		// swiperMovies.swipeTo ( index )
 		// $('.mc-control .active').removeClass('active')
 		// $(this).addClass('active')
+		alert('click');
 	})
 	
 	/* Dynamic Swiper */
