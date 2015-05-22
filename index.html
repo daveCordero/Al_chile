@@ -29,8 +29,8 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<!-- anula funciones de swiper lib
-<script src="js/libs/jquery.finger.js"></script> -->
+<!-- double touch -->
+<script src="js/libs/jquery.finger.js"></script>
 
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
@@ -47,14 +47,12 @@ var altoP = alto - 25;//-25 alto paginacion
 
 // var imagen = $('#imgSlide');
 
-// function changeIt(_src){
-// function changeIt(img){
-//     // alert(_src);
-//     var name = img.src;
-//     alert(name);
-// }​
+var zoomOn = false;
 
-// var zoomOn = false;
+// function getImgSrc(img){
+//   var name = img.src;
+//   alert(name);
+// }​
 
 $(document).ready(function() {
 // $(window).load(function() {
@@ -86,9 +84,9 @@ $(document).ready(function() {
 
   
   // direct event
-  // $('.touch').on('doubletap', function(e) {
+  $('.touch').on('doubletap', function(e) {
 
-    // if( zoomOn == false ){
+    if( zoomOn == false ){
 
       // $(".swiper").addClass("zoomImg");
       // $(".touch img").addClass("zoomImg");
@@ -99,23 +97,22 @@ $(document).ready(function() {
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      // zoomOn == true;
+      // function getImgSrc(img){
+        // var name = img.src;
+        // alert(name);
+      // }​
 
-    // } else {
+      alert('imgName: 'imgName);
+
+      zoomOn == true;
+
+    } else {
 
       // $(".touch").removeClass("zoomImg");
 
-    // }// fin if( zoomOn
+    }// fin if( zoomOn
 
-  // });// fin $('.touch'
-
-
-  function changeIt(img){
-      var name = img.src;
-      alert(name);
-  }​
-
-  
+  });// fin $('.touch'
 
 });// fin $(documen).ready
 
@@ -126,11 +123,12 @@ $(document).ready(function() {
 
   <!--<div class="zoom"></div> /.zoom -->
 
-  <div class="swiper-container"> <!-- swiper-dynamic -->
+  <div class="swiper-container swiper-dynamic"> <!-- -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide"> <!-- touch -->
-        <img ondblclick="changeIt(this)" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
+        <!-- <img ondblclick="getImgSrc(this)" src="res/img/high_1.jpg"> -->
+        <img ondblclick="var imgName = this.src;" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
       </div>
 
       <div class="swiper-slide">
