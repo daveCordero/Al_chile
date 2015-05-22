@@ -15,11 +15,9 @@ $(function(){
 	// 		setTimeout(function(){allowMovieClick = true},100)	
 	// 	}
 	// });
-	$('.mc-control img').bind('mousedown',function(e){
-		e.preventDefault()
-		// $(this).addClass('zoomImgOn')
-		// alert('mousedown')
-	})
+	// $('.mc-control img').bind('mousedown',function(e){
+	// 	e.preventDefault()
+	// })
 	$('.mc-control img').bind('click',function(e){
 		e.preventDefault()
 		if (!allowMovieClick) return;
