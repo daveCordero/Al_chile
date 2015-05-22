@@ -45,33 +45,34 @@
 var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
 
-var zoomOn   = false;
+// var zoomOn   = false;
 var imgTouch = '';
 
 function zoomeR() {
 
-  if( zoomOn == false ){
+  alert('imgTouch: ' +  imgTouch);
+  // if( zoomOn == false ){
       // $('.mc-control').removeClass('zoomImgOff')
       // $(".mc-control").addClass("zoomImgOn")
       // alert('imgTouch: ' +  imgTouch);
-      $('.pagination-sd').css({ 'display':'none' });
-      $('.swiper').css({        'display':'none' });
-      // $('body').css({           'background-image':'url("imgTouch")' });
-      // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
-      $('#zoomCont').html('<img src="res/img/high_1.jpg">');
-      $('#zoomCont').fadeIn(500);$('#zoomCont').html('<img src="res/img/high_1.jpg">');
-      zoomOn = true;
+    //   $('.pagination-sd').css({ 'display':'none' });
+    //   $('.swiper').css({        'display':'none' });
+    //   // $('body').css({           'background-image':'url("imgTouch")' });
+    //   // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
+    //   $('#zoomCont').html('<img src="res/img/high_1.jpg">');
+    //   $('#zoomCont').fadeIn(500);
+    //   zoomOn = true;
 
-    } else {
+    // } else {
 
-      // alert('zoom On True');
-      $('#zoomCont').fadeOut(500);
-      $('.swiper').css({        'display':'block' });
-      $('.pagination-sd').css({ 'display':'block' });
-      // $('body').css({           'background-image':'url("res/img/bg.jpg")' });
-      zoomOn = false;
+    //   // alert('zoom On True');
+    //   $('#zoomCont').fadeOut(500);
+    //   $('.swiper').css({        'display':'block' });
+    //   $('.pagination-sd').css({ 'display':'block' });
+    //   // $('body').css({           'background-image':'url("res/img/bg.jpg")' });
+    //   zoomOn = false;
 
-    }// fin if( zoomOn
+    // }// fin if( zoomOn
 
 }//fin zoomeR()
 
