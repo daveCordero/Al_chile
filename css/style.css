@@ -276,7 +276,7 @@ body {
 	background-image: url("../res/img/bg.jpg");
 }
 
-.zoomCont { 
+#zoomCont { 
 	background-color: #CCC;
 	overflow: scroll;
 	display: block;

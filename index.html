@@ -57,17 +57,18 @@ function zoomeR() {
       $('.pagination-sd').css({ 'display':'none' });
       $('.swiper').css({        'display':'none' });
       // $('body').css({           'background-image':'url("imgTouch")' });
-      $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
-      // $('.zoomCont').fadeIn(500);
+      // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
+      $('#zoomCont').html('<img src="res/img/high_1.jpg">');
+      $('#zoomCont').fadeIn(500);$('#zoomCont').html('<img src="res/img/high_1.jpg">');
       zoomOn = true;
 
     } else {
 
       // alert('zoom On True');
-      // $('.zoomCont').fadeOut(500);
+      $('#zoomCont').fadeOut(500);
       $('.swiper').css({        'display':'block' });
       $('.pagination-sd').css({ 'display':'block' });
-      $('body').css({           'background-image':'url("res/img/bg.jpg")' });
+      // $('body').css({           'background-image':'url("res/img/bg.jpg")' });
       zoomOn = false;
 
     }// fin if( zoomOn
@@ -81,34 +82,6 @@ $(document).ready(function() {
   $('.swiper-container').css({ 'height':altoP+'px' });
   $('.swiper-slide').css({     'height':altoP+'px' });
   $('.swiper-slide img').css({ 'height':altoP+'px' });
-
-  // $('.mc-control img').bind('click',function(e){
-  // $('.swiper-slide img').bind('click',function(imgTouch){
-
-    // alert('swiper-slide img');
-
-    // if( zoomOn == false ){
-    //   // $('.mc-control').removeClass('zoomImgOff')
-    //   // $(".mc-control").addClass("zoomImgOn")
-    //   // alert('imgTouch: ' +  imgTouch);
-    //   $('.swiper').css({        'display':'none' });
-    //   $('.pagination-sd').css({ 'display':'none' });
-    //   $('.zoomCont').css({      'display':'block' });
-    //   // $('.zoomCont').fadeIn(500);
-    //   zoomOn = true;
-
-    // } else {
-
-    //   // alert('zoom On True');
-    //   // $('.zoomCont').fadeOut(500);
-    //   $('.zoomCont').css({      'display':'none' });
-    //   $('.swiper').css({        'display':'block' });
-    //   $('.pagination-sd').css({ 'display':'block' });
-    //   zoomOn = false;
-
-    // }// fin if( zoomOn
-
-  // })//fin $('.mc-control img
 
 });// fin $(documen).ready
 
@@ -200,6 +173,8 @@ $(document).ready(function() {
   </div><!-- /.swiper-container swiper-dynamic -->
 
   <div class="pagination-sd"></div>
+
+  <div id="zoomCont"></div>
 
 </body>
 </html>
