@@ -29,7 +29,8 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<script src="js/libs/jquery.finger.js"></script>
+<!-- anula funciones de swiper lib
+<script src="js/libs/jquery.finger.js"></script> -->
 
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
@@ -52,7 +53,7 @@ function changeIt(_src){
     alert(name);
 }​
 
-var zoomOn = false;
+// var zoomOn = false;
 
 $(document).ready(function() {
 // $(window).load(function() {
@@ -116,12 +117,12 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <div class="zoom"></div><!-- /.zoom -->
+  <!--<div class="zoom"></div> /.zoom -->
 
   <div class="swiper-container"> <!-- swiper-dynamic -->
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide touch"> <!-- -->
+      <div class="swiper-slide"> <!-- touch -->
         <img ondblclick="changeIt(this.src)" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
       </div>
 
