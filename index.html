@@ -49,14 +49,14 @@ var zoomOn   = false;
 var imgTouch = '';
 
 function zoomeR() {
-  
+
   if( zoomOn == false ){
       // $('.mc-control').removeClass('zoomImgOff')
       // $(".mc-control").addClass("zoomImgOn")
       // alert('imgTouch: ' +  imgTouch);
-      $('.swiper').css({        'display':'none' });
       $('.pagination-sd').css({ 'display':'none' });
-      $('.zoomCont').css({      'display':'block' });
+      $('.swiper').css({        'display':'none' });
+      $('body').css({           'background-image':'url("imgTouch")' });
       // $('.zoomCont').fadeIn(500);
       zoomOn = true;
 
@@ -64,9 +64,9 @@ function zoomeR() {
 
       // alert('zoom On True');
       // $('.zoomCont').fadeOut(500);
-      $('.zoomCont').css({      'display':'none' });
       $('.swiper').css({        'display':'block' });
       $('.pagination-sd').css({ 'display':'block' });
+      $('body').css({           'background-image':'url("res/img/bg.jpg")' });
       zoomOn = false;
 
     }// fin if( zoomOn
@@ -115,8 +115,6 @@ $(document).ready(function() {
 
 </head>
 <body>
-
-  <div class="zoomCont"></div> <!--/.zoomCont -->
 
   <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
     <div class="swiper-wrapper">
