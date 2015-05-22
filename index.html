@@ -50,25 +50,23 @@ var imgTouch = '';
 
 function zoomerIn() {
 
-  alert('imgTouch: ' +  imgTouch);
-  $('.pagination-sd').css({ 'display':'none' });
-  $('.swiper').css({        'display':'none' });
+  // alert('imgTouch: ' +  imgTouch);
+  // $('.pagination-sd').css({ 'display':'none' });
+  // $('.swiper').css({        'display':'none' });
   // $('body').css({           'background-image':'url("imgTouch")' });
   // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
   // $('#zoomCont').fadeIn(500);
   $('#zoomCont').css({ 'visibility':'visible' });
-  $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
-  // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="imgTouch">');
+  // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
+  $('#zoomCont').html( '<img src="imgTouch" onclick="javascript: zoomerOut();">');
 
 }//fin zoomeR()
 
 function zoomerOut() {
   $("#zoomCont img:last-child").remove();
   $('#zoomCont').css({ 'visibility':'hidden' });
-  // $('.swiper').fadeIn(500);
-  // $('.pagination-sd').fadeIn(500);
-  $('.pagination-sd').css({ 'display':'block' });
-  $('.swiper').css({        'display':'block' });
+  // $('.pagination-sd').css({ 'display':'block' });
+  // $('.swiper').css({        'display':'block' });
 }
 
 $(document).ready(function() {
