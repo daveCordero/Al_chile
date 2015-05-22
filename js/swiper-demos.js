@@ -4,11 +4,6 @@ Author: Vladimir Kharlampidi, The iDangero.us
 $(function(){
 
 	//Movies App
-	// var swiperMovies = $('.mc-posters').swiper({
-	// 	mode : "horizontal", 
-	// 	onlyExternal : true,
-	// 	speed:1000
-	// });
 	var allowMovieClick = true
 	var swiperMControl = $('.mc-control').swiper({
 		mode : "horizontal", 
@@ -23,15 +18,17 @@ $(function(){
 	$('.mc-control img').bind('mousedown',function(e){
 		e.preventDefault()
 		// $(this).addClass('zoomImgOn')
-		alert('mousedown');
+		// alert('mousedown');
 	})
 	$('.mc-control img').bind('click',function(e){
 		e.preventDefault()
 		if (!allowMovieClick) return;
-		// var index = $(this).index()
-		// swiperMovies.swipeTo ( index )
 		// $('.mc-control .active').removeClass('active')
-		// $(this).addClass('active')
+		$(".touch").addClass("zoomImgOn");
+		$('body').css({ 'overflow':'scroll' });
+		$('.swiper-container').css({ 'overflow':'scroll' });
+	    $('.swiper-wrapper').css({   'overflow':'scroll' });
+	    $('.swiper-slide').css({     'overflow':'scroll' });
 		alert('click');
 	})
 	
