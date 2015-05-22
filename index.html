@@ -47,7 +47,8 @@ var altoP = alto - 25;//-25 alto paginacion
 
 // var imagen = $('#imgSlide');
 
-var zoomOn = false;
+var zoomOn   = false;
+var imgTouch = '';
 
 // function getImgSrc(img){
 //   var name = img.src;
@@ -80,8 +81,6 @@ $(document).ready(function() {
   // $('.swiper-container').bind('doubletap', function(event){
   //   alert('doubletap');
   // });
-
-
   
   // direct event
   // $('.touch').on('doubletap', function(e) {
@@ -89,15 +88,14 @@ $(document).ready(function() {
     if( zoomOn == false ){
 
       $('.mc-control img').bind('click',function(e){
-        // e.preventDefault()
-        // if (!allowMovieClick) return;
-        $('.zoomImgOff').removeClass('zoomImgOff')
-        $(".mc-control").addClass("zoomImgOn")
-        $('body').css({ 'overflow':'scroll' })
-        $('.swiper-container').css({ 'overflow':'scroll' })
-        $('.swiper-wrapper').css({   'overflow':'scroll' })
-        $('.swiper-slide').css({     'overflow':'scroll' })
-        alert('click false')
+        // $('.mc-control').removeClass('zoomImgOff')
+        // $(".mc-control").addClass("zoomImgOn")
+        // $('body').css({ 'overflow':'scroll' })
+        // $('.swiper-container').css({ 'overflow':'scroll' })
+        // $('.swiper-wrapper').css({   'overflow':'scroll' })
+        // $('.swiper-slide').css({     'overflow':'scroll' })
+        // alert('click false')
+        alert('imgTouch: ' +  imgTouch);
       })
 
       // $(".touch").addClass("zoomImgOn");
@@ -111,7 +109,7 @@ $(document).ready(function() {
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      // alert('zoomOn false');
+      alert('zoomOn False');
       zoomOn = true;
 
     } else {
@@ -119,7 +117,7 @@ $(document).ready(function() {
   //     $(".touch").removeClass("zoomImgOn");
   //     $(".touch").addClass("zoomImgOff");
   //     $('body').css({ 'overflow':'hidden' });
-      alert('zoomOn true');
+      alert('zoomOn True');
       zoomOn = false;
 
     }// fin if( zoomOn
@@ -133,13 +131,13 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <!--<div class="zoom"></div> /.zoom -->
+  <div class="zoom"></div> <!--/.zoom -->
 
   <div class="swiper-container swiper-dynamic mc-control zoomImgOff"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img src="res/img/high_1.jpg">
+        <img onclick="javascript: imgTouch = this.src" src="res/img/high_1.jpg">
       </div>
 
       <div class="swiper-slide">
