@@ -94,8 +94,10 @@ $(document).ready(function() {
         // $('.swiper-container').css({ 'overflow':'scroll' })
         // $('.swiper-wrapper').css({   'overflow':'scroll' })
         // $('.swiper-slide').css({     'overflow':'scroll' })
-        // alert('click false')
         alert('imgTouch: ' +  imgTouch);
+        $('.swiper-container').css({ 'display':'none' });
+        // $('.zoom').css({ 'display':'block' });
+        $('.zoom').fadeIn(500);
       })
 
       // $(".touch").addClass("zoomImgOn");
@@ -109,15 +111,13 @@ $(document).ready(function() {
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      alert('zoomOn False');
+      // alert('zoomOn False');
       zoomOn = true;
 
     } else {
 
-  //     $(".touch").removeClass("zoomImgOn");
-  //     $(".touch").addClass("zoomImgOff");
-  //     $('body').css({ 'overflow':'hidden' });
-      alert('zoomOn True');
+      alert('zoom On True');
+      $('.swiper-container').css({ 'display':'none' });
       zoomOn = false;
 
     }// fin if( zoomOn
@@ -133,7 +133,7 @@ $(document).ready(function() {
 
   <div class="zoom"></div> <!--/.zoom -->
 
-  <div class="swiper-container swiper-dynamic mc-control zoomImgOff"> <!-- touch -->
+  <div class="swiper-container swiper-dynamic"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
