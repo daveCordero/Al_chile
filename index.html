@@ -45,15 +45,8 @@
 var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
 
-// var imagen = $('#imgSlide');
-
 var zoomOn   = false;
 var imgTouch = '';
-
-// function getImgSrc(img){
-//   var name = img.src;
-//   alert(name);
-// }​
 
 $(document).ready(function() {
 // $(window).load(function() {
@@ -63,14 +56,15 @@ $(document).ready(function() {
   $('.swiper-slide').css({     'height':altoP+'px' });
   $('.swiper-slide img').css({ 'height':altoP+'px' });
 
-  $('.mc-control img').bind('click',function(e){
+  // $('.mc-control img').bind('click',function(e){
+  $('.swiper img').bind('click',function(imgTouch){
 
     if( zoomOn == false ){
       // $('.mc-control').removeClass('zoomImgOff')
       // $(".mc-control").addClass("zoomImgOn")
       // alert('imgTouch: ' +  imgTouch);
-      $('.swiper').css({ 'display':'none' });
-      $('.zoom').css({ 'display':'block' });
+      $('.swiper').css({   'display':'none' });
+      $('.zoomCont').css({ 'display':'block' });
       // $('.zoom').fadeIn(500);
       zoomOn = true;
 
@@ -78,8 +72,8 @@ $(document).ready(function() {
 
       // alert('zoom On True');
       // $('.zoom').fadeOut(500);
-      $('.zoom').css({ 'display':'none' });
-      $('.swiper').css({ 'display':'block' });
+      $('.zoomCont').css({ 'display':'none' });
+      $('.swiper').css({   'display':'block' });
       zoomOn = false;
 
     }// fin if( zoomOn
@@ -93,7 +87,7 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <div class="zoom"></div> <!--/.zoom -->
+  <div class="zoomCont"></div> <!--/.zoomCont -->
 
   <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
     <div class="swiper-wrapper">
