@@ -18,18 +18,18 @@ $(function(){
 	$('.mc-control img').bind('mousedown',function(e){
 		e.preventDefault()
 		// $(this).addClass('zoomImgOn')
-		// alert('mousedown');
+		// alert('mousedown')
 	})
 	$('.mc-control img').bind('click',function(e){
 		e.preventDefault()
 		if (!allowMovieClick) return;
-		// $('.mc-control .active').removeClass('active')
-		$(".touch").addClass("zoomImgOn");
-		$('body').css({ 'overflow':'scroll' });
-		$('.swiper-container').css({ 'overflow':'scroll' });
-	    $('.swiper-wrapper').css({   'overflow':'scroll' });
-	    $('.swiper-slide').css({     'overflow':'scroll' });
-		alert('click');
+		$('.zoomImgOff').removeClass('zoomImgOff')
+		$(".mc-control").addClass("zoomImgOn")
+		$('body').css({ 'overflow':'scroll' })
+		$('.swiper-container').css({ 'overflow':'scroll' })
+	    $('.swiper-wrapper').css({   'overflow':'scroll' })
+	    $('.swiper-slide').css({     'overflow':'scroll' })
+		alert('click')
 	})
 	
 	/* Dynamic Swiper */
