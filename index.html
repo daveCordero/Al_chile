@@ -48,7 +48,7 @@ var altoP = alto - 25;//-25 alto paginacion
 // var zoomOn   = false;
 var imgTouch = '';
 
-function zoomeR() {
+function zoomerIn() {
 
   alert('imgTouch: ' +  imgTouch);
   $('.pagination-sd').css({ 'display':'none' });
@@ -111,7 +111,8 @@ $(document).ready(function() {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = this.attr.src; zoomeR();" src="res/img/high_1.jpg">
+        <!-- <img onclick="javascript: imgTouch = this.attr.src; zoomerIn();" src="res/img/high_1.jpg"> -->
+        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_1.jpg">
       </div>
 
       <div class="swiper-slide">
