@@ -29,7 +29,7 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<script src="http://rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
+<script src="js/libs/jquery.finger.js"></script>
 
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
@@ -84,9 +84,9 @@ $(document).ready(function() {
 
   
   // direct event
-  $('.touch').on('doubletap', function(e) {
+  // $('.touch').on('doubletap', function(e) {
 
-    if( zoomOn == false ){
+    // if( zoomOn == false ){
 
       // $(".swiper").addClass("zoomImg");
       // $(".touch img").addClass("zoomImg");
@@ -97,15 +97,15 @@ $(document).ready(function() {
       // var img_type = img.attr("src"); // not necessary to store it, could be use as it in the if statement
       // alert('img_type: ' + img_type);
 
-      zoomOn == true;
+      // zoomOn == true;
 
-    } else {
+    // } else {
 
       // $(".touch").removeClass("zoomImg");
 
-    }// fin if( zoomOn    }
+    // }// fin if( zoomOn
 
-  });// fin $('.touch'
+  // });// fin $('.touch'
 
   
 
@@ -122,7 +122,7 @@ $(document).ready(function() {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide touch"> <!-- -->
-        <img onclick="changeIt(this.src)" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
+        <img ondblclick="changeIt(this.src)" src="res/img/high_1.jpg"> <!-- id="imgSlide" -->
       </div>
 
       <div class="swiper-slide">
