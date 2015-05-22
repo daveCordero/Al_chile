@@ -55,12 +55,13 @@ function zoomerIn() {
   $('.swiper').css({        'display':'none' });
   // $('body').css({           'background-image':'url("imgTouch")' });
   // $('body').css({           'background-image':'url("res/img/high_1.jpg")' });
-  // $('#zoomCont').fadeIn(500);
+  $('#zoomCont').fadeIn(500);
   // $('#zoomCont').css({ 'visibility':'visible' });
   // $('#zoomCont').css({ 'display':'block' });
   // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
-  $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="imgTouch">');
-  $('#zoomCont').css({ 'display':'block' });
+  // $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
+  $('#zoomCont').append('<img onclick="javascript: zoomerOut();" src="imgTouch">');
+  // $('#zoomCont').css({ 'display':'block' });
 
 }//fin zoomeR()
 
