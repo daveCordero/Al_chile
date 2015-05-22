@@ -56,7 +56,12 @@ function zoomerIn() {
 
   var imgW = $('#zoomCont img').width();
   var imgH = $('#zoomCont img').height();
-  alert('imgW: ' + imgW + ', imgH: ' + imgH);
+  // alert('imgW: ' + imgW + ', imgH: ' + imgH);
+  $('#zoomCont').css({ 'width' : imgW });
+  $('#zoomCont').css({ 'height': imgH });
+
+  $('#zoomCont').css({ 'top': imgH / 2 });
+  $('#zoomCont').css({ 'top': imgW / 2 });
 
 }//fin zoomerIn()
 
