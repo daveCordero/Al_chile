@@ -5,16 +5,16 @@ $(function(){
 
 	//Movies App
 	var allowMovieClick = true
-	var swiperMControl = $('.mc-control').swiper({
-		mode : "horizontal", 
-		scrollContainer:true,
-		onTouchMove : function(){
-			allowMovieClick = false	
-		},
-		onTouchEnd : function() {
-			setTimeout(function(){allowMovieClick = true},100)	
-		}
-	});
+	// var swiperMControl = $('.mc-control').swiper({
+	// 	mode : "horizontal", 
+	// 	scrollContainer:true,
+	// 	onTouchMove : function(){
+	// 		allowMovieClick = false	
+	// 	},
+	// 	onTouchEnd : function() {
+	// 		setTimeout(function(){allowMovieClick = true},100)	
+	// 	}
+	// });
 	$('.mc-control img').bind('mousedown',function(e){
 		e.preventDefault()
 		// $(this).addClass('zoomImgOn')
