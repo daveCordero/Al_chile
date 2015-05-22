@@ -55,8 +55,9 @@ function zoomerIn() {
   $('.swiper').css({        'display':'none' });
   // $('#zoomCont').css({      'display':'block' });
 
-  $('#zoomCont').fadeIn( 500, function(){ 
-    $('#zoomCont').append('<img onclick="javascript: zoomerOut();" src="imgTouch">');
+  $('#zoomCont').fadeIn( 100, function(){ 
+    // $('#zoomCont').append('<img onclick="javascript: zoomerOut();" src="imgTouch">');
+    $('#zoomCont').html('<img onclick="javascript: zoomerOut();" src="imgTouch">');
   });
   // $('#zoomCont').css({ 'visibility':'visible' });
   // $('#zoomCont').html( '<img onclick="javascript: zoomerOut();" src="res/img/high_1.jpg">');
@@ -68,10 +69,10 @@ function zoomerIn() {
 
 function zoomerOut() {
   // $('#zoomCont').css({ 'visibility':'hidden' });
-  // $("#zoomCont img:last-child").remove();
-  $('#zoomCont').prepend('img');
+  $("#zoomCont img:last-child").remove();
+  // $('#zoomCont').prepend('img');
   // $('#zoomCont').css({      'display':'none' });
-  $('#zoomCont').fadeOut( 500, function(){ 
+  $('#zoomCont').fadeOut( 100, function(){ 
     $( ".swiper" ).fadeIn( 100 );
     $( ".pagination-sd" ).fadeIn( 100 );
     // $('.swiper').css({        'display':'block' });
