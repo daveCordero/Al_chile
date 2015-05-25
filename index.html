@@ -19,8 +19,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.5, user-scalable=1"> -->
 <!-- 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.5, user-scalable=true"> -->
-<!-- 
-<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=yes' /> -->
+<!--  -->
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=yes' />
 
 
 <link rel="stylesheet" href="css/idangerous.swiper.css">
@@ -49,15 +49,17 @@ function zoomerIn() {
 
   // alert('zoomerIn');
 
-  $(".swiper-container").css({ 'overflow':'scroll' });
   $(".swiper-wrapper").css({ 'width':'auto !important' });
   var imgW = $('.swiper-slide img').width();
   var imgH = $('.swiper-slide img').height();
   alert('imgW: ' + imgW + ', imgH: ' + imgH);
-  
-  $(".swiper-wrapper").css({ 'width':'imgW'+'px' });
-  $(".swiper-wrapper").css({ 'height':'imgH'+'px' });
+
+  $(".swiper-wrapper").css({ 'width':  imgW + 'px' });
+  $(".swiper-wrapper").css({ 'height': imgH + 'px' });
+
+  $(".swiper-container").css({ 'overflow':'scroll' });
   $(".pagination-sd").css({ 'display':'none' });
+  
   $(".swiper").removeClass("swiper-dynamics");
   $(".swiper").removeClass("zoomImgOff");
   $(".swiper").addClass("zoomImgOn");
@@ -68,6 +70,7 @@ function zoomerOut() {
 
   // $("#zoomCont img:last-child").remove();
   // $('#zoomCont').css({ 'visibility':'hidden' });
+  $(".pagination-sd").css({ 'display':'block' });
 
 }//fin zoomerOut()
 
