@@ -47,9 +47,15 @@ var altoP = alto - 25;//-25 alto paginacion
 
 function zoomerIn() {
 
-  alert('zoomerIn');
+  // alert('zoomerIn');
+  var imgW = $('.swiper-slide img').width();
+  var imgH = $('.swiper-slide img').height();
+  alert('imgW: ' + imgW + ', imgH: ' + imgH);
+
   $(".swiper-container").css({ 'overflow':'scroll' });
-  $(".swiper-wrapper").css({ 'width':'auto !important' });
+  // $(".swiper-wrapper").css({ 'width':'auto !important' });
+  $(".swiper-wrapper").css({ 'width':'imgW'+'px' });
+  $(".swiper-wrapper").css({ 'height':'imgH'+'px' });
   $(".pagination-sd").css({ 'display':'none' });
   $(".swiper").removeClass("swiper-dynamics");
   $(".swiper").removeClass("zoomImgOff");
@@ -59,8 +65,8 @@ function zoomerIn() {
 
 function zoomerOut() {
 
-  $("#zoomCont img:last-child").remove();
-  $('#zoomCont').css({ 'visibility':'hidden' });
+  // $("#zoomCont img:last-child").remove();
+  // $('#zoomCont').css({ 'visibility':'hidden' });
 
 }//fin zoomerOut()
 
