@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -40,42 +41,45 @@
 
 <script type="text/javascript">
 
-  // var ancho = $(window).width();
-  var alto  = $(window).height();
-  var altoP = alto - 25;//-25 alto paginacion
-  // var zoomOn   = false;
+// var ancho = $(window).width();
+var alto  = $(window).height();
+var altoP = alto - 25;//-25 alto paginacion
 
-  var imgTouch = '';
-  function zoomerIn() {
+// var zoomOn   = false;
+var imgTouch = '';
 
-    // alert('imgTouch: ' +  imgTouch);
-    $('#zoomCont').css({ 'visibility':'visible' });
-    $('#zoomCont').html( '<img src="'+imgTouch+'" onclick="javascript: zoomerOut();">');
-    var imgW = $('#zoomCont img').width();
-    var imgH = $('#zoomCont img').height();
-    // alert('imgW: ' + imgW + ', imgH: ' + imgH);
-    $('#zoomCont').css({ 'width' : imgW });
-    $('#zoomCont').css({ 'height': imgH });
-    $('#zoomCont').css({ 'margin-top':  imgH / 2 });
-    $('#zoomCont').css({ 'margin-left': imgW / 2 });
+function zoomerIn() {
 
-  }//fin zoomerIn()
+  // alert('imgTouch: ' +  imgTouch);
+  $('#zoomCont').css({ 'visibility':'visible' });
+  $('#zoomCont').html( '<img src="'+imgTouch+'" onclick="javascript: zoomerOut();">');
 
-  function zoomerOut() {
+  var imgW = $('#zoomCont img').width();
+  var imgH = $('#zoomCont img').height();
+  // alert('imgW: ' + imgW + ', imgH: ' + imgH);
+  $('#zoomCont').css({ 'width' : imgW });
+  $('#zoomCont').css({ 'height': imgH });
 
-    $("#zoomCont img:last-child").remove();
-    $('#zoomCont').css({ 'visibility':'hidden' });
+  $('#zoomCont').css({ 'top': imgH / 2 });
+  $('#zoomCont').css({ 'top': imgW / 2 });
 
-  }//fin zoomerOut()
+}//fin zoomerIn()
 
-  $(document).ready(function() {
-    
-    // necesario para que wActual y hActual obtengan un valor en relación a la ventana del navegador
-    $('.swiper-container').css({ 'height':altoP+'px' });
-    $('.swiper-slide').css({     'height':altoP+'px' });
-    $('.swiper-slide img').css({ 'height':altoP+'px' });
+function zoomerOut() {
 
-  });// fin $(documen).ready
+  $("#zoomCont img:last-child").remove();
+  $('#zoomCont').css({ 'visibility':'hidden' });
+
+}//fin zoomerOut()
+
+$(document).ready(function() {
+
+  // necesario para que wActual y hActual obtengan un valor en relación a la ventana del navegador
+  $('.swiper-container').css({ 'height':altoP+'px' });
+  $('.swiper-slide').css({     'height':altoP+'px' });
+  $('.swiper-slide img').css({ 'height':altoP+'px' });
+
+});// fin $(documen).ready
 
 </script>
 
