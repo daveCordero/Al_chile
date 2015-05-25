@@ -29,9 +29,6 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<!-- double doubletap
-<script src="js/libs/jquery.finger.js"></script> -->
-
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
 <!-- Swiper Scrollbar plugin -->
@@ -46,22 +43,15 @@ var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
 
 // var zoomOn   = false;
-var imgTouch = '';
+// var imgTouch = '';
 
 function zoomerIn() {
 
-  // alert('imgTouch: ' +  imgTouch);
-  $('#zoomCont').css({ 'visibility':'visible' });
-  $('#zoomCont').html( '<img src="'+imgTouch+'" onclick="javascript: zoomerOut();">');
-
-  var imgW = $('#zoomCont img').width();
-  var imgH = $('#zoomCont img').height();
-  // alert('imgW: ' + imgW + ', imgH: ' + imgH);
-  $('#zoomCont').css({ 'width' : imgW });
-  $('#zoomCont').css({ 'height': imgH });
-
-  $('#zoomCont').css({ 'margin-top':  imgH / 2 });
-  $('#zoomCont').css({ 'margin-left': imgW / 2 });
+  alert('zoomerIn');
+  $('.swiper-wrapper').css({ 'width':'auto' });
+  $("swiper").removeClass("swiper-dynamics");
+  $("swiper").removeClass("zoomImgOff");
+  $("swiper").addClass("zoomImgOn");
 
 }//fin zoomerIn()
 
@@ -86,83 +76,83 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
+  <div class="swiper-container swiper-dynamic swiper zoomImgOff"> <!-- touch -->
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_1.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_1.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_2.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_2.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_3.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_3.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_4.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_4.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_5.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_5.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_6.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_6.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_7.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_7.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_8.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_8.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_9.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_9.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_11.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_11.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_12.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_12.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_13.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_13.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_14.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_14.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_17.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_17.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_18.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_18.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_19.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_19.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_20.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_20.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_21.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_21.jpg">
       </div>
 
       <div class="swiper-slide">
-        <img onclick="javascript: imgTouch = $(this).attr('src'); zoomerIn();" src="res/img/high_22.jpg">
+        <img onclick="javascript: zoomerIn();" src="res/img/high_22.jpg">
       </div>
 
     </div><!-- /.swiper-wrapper -->
