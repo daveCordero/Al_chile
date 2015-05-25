@@ -51,7 +51,8 @@ var imgTouch = '';
 function zoomerIn() {
 
   // alert('imgTouch: ' +  imgTouch);
-  $('#zoomCont').css({ 'visibility':'visible' });
+  // $('#zoomCont').css({ 'visibility':'visible' });//luego de zoom pantalla queda gigante y no retorna
+  $('#zoomCont').css({ 'display':'block' });
   $('#zoomCont').html( '<img src="'+imgTouch+'" onclick="javascript: zoomerOut();">');
 
   var imgW = $('#zoomCont img').width();
@@ -69,9 +70,8 @@ function zoomerIn() {
 function zoomerOut() {
 
   $("#zoomCont img:last-child").remove();
-  $('#zoomCont').css({ 'visibility':'hidden' });
-
-  this.moveTo(0, 100);
+  // $('#zoomCont').css({ 'visibility':'hidden' });
+  $('#zoomCont').css({ 'display':'none' });
 
 }//fin zoomerOut()
 
