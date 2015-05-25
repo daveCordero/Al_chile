@@ -230,7 +230,6 @@ body {
 
 
 /* miscelaneos David Herrera
-
 	-webkit-transition: all 100ms ease-in-out;
 	-moz-transition: all 100ms ease-in-out;
 	-ms-transition: all 100ms ease-in-out;
@@ -293,14 +292,12 @@ body {
 	/*
 	top: 0px;
 	left: 0px;
-
 	width: 100%;
 	height: 100%;*/
 
 	color: #FFF;
 	visibility: hidden;
 }
-
 
 /*
 .touch {
@@ -309,16 +306,14 @@ body {
 	-ms-transition:     all 500ms ease-in-out;
 	-o-transition:      all 500ms ease-in-out;
 	-khtml-transition:  all 500ms ease-in-out;
-}*/
-
+}
 .zoomImgOn {
 	-ms-transform:     scale(1.9);
-	-webkit-transform: scale(1.9);
-	transform:         scale(1.9);
+    -webkit-transform: scale(1.9);
+    transform:         scale(1.9);
 }
-
 .zoomImgOff {
 	-ms-transform:     scale(1.0);
-	-webkit-transform: scale(1.0);
-	transform:         scale(1.0);
-}
+    -webkit-transform: scale(1.0);
+    transform:         scale(1.0);
+}*/
