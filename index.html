@@ -54,9 +54,11 @@ function zoomerIn() {
   var imgH = $('.swiper-slide img').height();
   alert('imgW: ' + imgW + ', imgH: ' + imgH);
 
-  $(".swiper-container").css({ 'width':  imgW + 'px' });
+  $(".swiper-container").css({ 'width' : imgW + 'px' });
   $(".swiper-container").css({ 'height': imgH + 'px' });
-  // $(".swiper-wrapper").css({ 'width':  '1080px' });
+  $(".swiper-wrapper").css({   'width' : imgW + 'px' });
+  $(".swiper-wrapper").css({   'height': imgH + 'px' });
+  // $(".swiper-wrapper").css({ 'width' : '1080px' });
   // $(".swiper-wrapper").css({ 'height': '1920px' });
 
   $(".swiper-container").css({ 'overflow':'scroll' });
