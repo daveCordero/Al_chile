@@ -60,6 +60,9 @@ function zoomerIn() {
   $('#zoomCont').css({ 'width' : imgW });
   $('#zoomCont').css({ 'height': imgH });
 
+  $('#zoomCont img').css({ 'top' : -imgH / 2 });
+  $('#zoomCont img').css({ 'left': -imgW / 2 });
+
   // $('#zoomCont').css({ 'top' : -imgH / 2 });
   // $('#zoomCont').css({ 'left': -imgW / 2 });
   // $('#zoomCont').css({ 'margin-top' : -imgH / 2 });
