@@ -301,6 +301,7 @@ body {
 	visibility: hidden;
 }
 
+
 /*
 .touch {
 	-webkit-transition: all 500ms ease-in-out;
@@ -308,16 +309,16 @@ body {
 	-ms-transition:     all 500ms ease-in-out;
 	-o-transition:      all 500ms ease-in-out;
 	-khtml-transition:  all 500ms ease-in-out;
-}
+}*/
 
 .zoomImgOn {
 	-ms-transform:     scale(1.9);
-    -webkit-transform: scale(1.9);
-    transform:         scale(1.9);
+	-webkit-transform: scale(1.9);
+	transform:         scale(1.9);
 }
 
 .zoomImgOff {
 	-ms-transform:     scale(1.0);
-    -webkit-transform: scale(1.0);
-    transform:         scale(1.0);
-}*/
+	-webkit-transform: scale(1.0);
+	transform:         scale(1.0);
+}
