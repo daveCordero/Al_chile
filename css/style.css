@@ -281,10 +281,10 @@ body {
 	z-index: 100000000000000;
 
 	display: block;
-	/*
+	
 	position: absolute;
 	top: 0px;
-	left: 0px;*/
+	left: 0px;
 
 	overflow: scroll;
 	width: 100%;
