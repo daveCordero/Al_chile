@@ -48,7 +48,9 @@ var altoP = alto - 25;//-25 alto paginacion
 function zoomerIn() {
 
   alert('zoomerIn');
+  $(".swiper-container").css({ 'overflow':'scroll' });
   $(".swiper-wrapper").css({ 'width':'auto !important' });
+  $(".pagination-sd").css({ 'display':'none' });
   $(".swiper").removeClass("swiper-dynamics");
   $(".swiper").removeClass("zoomImgOff");
   $(".swiper").addClass("zoomImgOn");
@@ -160,7 +162,7 @@ $(document).ready(function() {
 
   <div class="pagination-sd"></div>
 
-  <div id="zoomCont"></div>
+  <!-- <div id="zoomCont"></div> -->
 
 </body>
 </html>
