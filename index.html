@@ -29,9 +29,6 @@
 
 <script src="js/libs/jquery-1.7.1.min.js"></script>
 
-<!-- double doubletap
-<script src="js/libs/jquery.finger.js"></script> -->
-
 <!-- Swiper -->
 <script src="js/idangerous.swiper-1.8.min.js"></script>
 <!-- Swiper Scrollbar plugin -->
@@ -45,25 +42,15 @@
 var alto  = $(window).height();
 var altoP = alto - 25;//-25 alto paginacion
 
-// var zoomOn   = false;
 var imgTouch = '';
 
 function zoomerIn() {
 
-  // alert('imgTouch: ' +  imgTouch);
-  $('#zoomCont').css({ 'visibility':'visible' });//luego de zoom pantalla queda gigante y no retorna
-  // $('#zoomCont').css({ 'display':'block' });
+  $('#zoomCont').css({ 'visibility':'visible' });
   $('#zoomCont').html( '<img src="'+imgTouch+'" onclick="javascript: zoomerOut();">');
 
   var imgW = $('#zoomCont img').width();
   var imgH = $('#zoomCont img').height();
-  // alert('imgW: ' + imgW + ', imgH: ' + imgH);
-
-  // $('#zoomCont').css({ 'width' : imgW });
-  // $('#zoomCont').css({ 'height': imgH });
-
-  // $('#zoomCont img').css({ 'top' : -imgH / 2 });
-  // $('#zoomCont img').css({ 'left': -imgW / 2 });
 
 }//fin zoomerIn()
 
@@ -71,9 +58,6 @@ function zoomerOut() {
 
   $("#zoomCont img:last-child").remove();
   $('#zoomCont').css({ 'visibility':'hidden' });
-  // $('#zoomCont').css({ 'display':'none' });
-
-  // window.moveTo(0, 100);
 
 }//fin zoomerOut()
 
@@ -91,7 +75,7 @@ $(document).ready(function() {
 </head>
 <body>
 
-  <div class="swiper-container swiper-dynamic swiper"> <!-- touch -->
+  <div class="swiper-container swiper-dynamic swiper">
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">

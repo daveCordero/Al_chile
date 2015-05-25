@@ -226,58 +226,13 @@ body {
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-
-
-
-/* miscelaneos David Herrera
-
-	-webkit-transition: all 100ms ease-in-out;
-	-moz-transition: all 100ms ease-in-out;
-	-ms-transition: all 100ms ease-in-out;
-	-o-transition: all 100ms ease-in-out;
-	-khtml-transition: all 100ms ease-in-out;
-	
-	-moz-box-shadow:     inset  0px 0px 50px rgba(113,0,48,1);
-	-webkit-box-shadow:  inset  0px 0px 50px rgba(113,0,48,1);
-	-o-box-shadow:  inset  0px 0px 50px rgba(113,0,48,1);
-	-khtml-webkit-box-shadow:  inset  0px 0px 50px rgba(113,0,48,1);
-	box-shadow:          inset  0px 0px 50px rgba(113,0,48,1);
-	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1)";
-	
-	-webkit-box-shadow:  0px 0px 50px rgba(0,0,0,0.5);
-	-moz-box-shadow:     0px 0px 50px rgba(0,0,0,0.5);
-	-o-box-shadow:  0px 0px 50px rgba(0,0,0,0.5);
-	-khtml-box-shadow:  0px 0px 50px rgba(0,0,0,0.5);
-	box-shadow:          0px 0px 50px rgba(0,0,0,0.5);
-	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=1)";
-	
-	-webkit-border-radius:20px;
-	-moz-border-radius:20px;
-	-khtml-border-radius:20px;
-	border-radius:20px;
-	
-	-webkit-transition: background-position .5s ease;
-	   -moz-transition: background-position .5s ease;
-	     -o-transition: background-position .5s ease;
-	        transition: background-position .5s ease;
-			
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-	filter: alpha(opacity=90);
-	-moz-opacity:0.9;
-	-khtml-opacity:0.9;
-	opacity:0.9;
-	
-*/
-
 body {
 	/* fondo relleno */
 	background-image: url("../res/img/bg.jpg");
 }
 
 #zoomCont { 
-	background-color: #444;
+	background-color: #FFF;
 	z-index: 100000000000000;
 
 	display: block;
@@ -290,33 +245,5 @@ body {
 	width: 100%;
 	height: 100%;
 
-	color: #FFF;
 	visibility: hidden;
 }
-/*
-#zoomCont img {
-	top: 50%;
-	left: 50%;
-	margin: -960px 0px 0px -540px;
-}*/
-
-/*
-.touch {
-	-webkit-transition: all 500ms ease-in-out;
-	-moz-transition:    all 500ms ease-in-out;
-	-ms-transition:     all 500ms ease-in-out;
-	-o-transition:      all 500ms ease-in-out;
-	-khtml-transition:  all 500ms ease-in-out;
-}
-
-.zoomImgOn {
-	-ms-transform:     scale(1.9);
-    -webkit-transform: scale(1.9);
-    transform:         scale(1.9);
-}
-
-.zoomImgOff {
-	-ms-transform:     scale(1.0);
-    -webkit-transform: scale(1.0);
-    transform:         scale(1.0);
-}*/
